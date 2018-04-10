@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Беккаревич](https://up.htmlacademy.ru/adaptive/14/user/627089).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара](https://up.htmlacademy.ru/adaptive/14/user/80826).
 
 ---
 
