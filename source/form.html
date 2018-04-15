@@ -42,30 +42,29 @@
     </header>
     <main class="page-main feedback">
       <div class="feedback__wrapper">
-        <h1 class="visually-hidden">Обратная связь</h1>
-        <section class="feedback__intro">
-          <h2 class="feedback-intro__title">Оставьте свой отзыв</h2>
-          <p class="feedback-intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </section>
-        <section class="feedback__content">
-          <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="feedback__section section-user">
+        <h1 class="feedback__title">Оставьте свой отзыв</h1>
+        <section class="feedback-content">
+          <p class="feedback-content__slogan">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+          <form class="feedback-content__form form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form__section section-user">
               <legend class="section-user__title">Представьтесь:</legend>
               <label class="section-user__label" for="user-name-id">Имя<span class="section-user__mark-required">*</span>:</label>
-              <input class="section-user__input" type="text" name="user-first-name" id="user-name-id" placeholder="Петр"></input>
+              <input class="section-user__input" type="text" name="user-first-name" id="user-name-id" placeholder="Петр" required autofocus></input>
               <label class="section-user__label" for="user-surname-id">Фамилия<span class="section-user__mark-required">*</span>:</label>
-              <input class="section-user__input" type="text" name="user-last-name" id="user-surname-id" placeholder="Иванов"></input>
+              <input class="section-user__input" type="text" name="user-last-name" id="user-surname-id" placeholder="Иванов" required></input>
               <label class="section-user__label" for="user-patronime-id">Отчество:</label>
               <input class="section-user__input" type="text" name="user-middle-name" id="user-patronime-id" placeholder="Александрович"></input>
             </fieldset>
-            <fieldset class="feedback__section section-contact">
+            <fieldset class="form__section section-contact">
               <legend class="section-contact__title">Контактная информация:</legend>
               <label class="section-contact__label" for="phone-id">Контактный телефон<span class="section-user__mark-required">*</span>:</label>
-              <input class="section-contact__input" type="text" name="phone" id="phone-id" placeholder="Введите телефон"></input>
+              <input class="section-contact__input" type="tel" name="phone" id="phone-id" placeholder="Введите телефон" required></input>
               <label class="section-contact__label" for="email-id">Электронная почта<span class="section-user__mark-required">*</span>:</label>
-              <input class="section-contact__input" type="text" name="email" id="email-id" placeholder="Введите e-mail"></input>
+              <input class="section-contact__input" type="email" name="email" id="email-id" placeholder="Введите e-mail" required></input>
             </fieldset>
-            <fieldset class="feedback__section section-rating">
+            <fieldset class="form__section section-rating">
               <legend class="section-rating__title">Ваше общее впечатление:</legend>
               <input class="section-rating__input" type="radio" name="rating" value="positive" id="rating-positive-id" checked></input>
               <label class="section-rating__label" for="rating-positive-id">Скорее положительное</label>
@@ -74,7 +73,7 @@
               <input class="section-rating__input" type="radio" name="rating" value="neutral" id="rating-neutral-id"></input>
               <label class="section-rating__label" for="rating-neutral-id">Затрудняюсь ответить</label>
             </fieldset>
-            <fieldset class="feedback__section section-attractions">
+            <fieldset class="form__section section-attractions">
               <legend class="section-attractions__title">Посещенные достопримечательности:</legend>
               <input class="section-attractions__input" type="checkbox" name="devils-bridge" id="devils-bridge-id" checked></input>
               <label class="section-attractions__label" for="devils-bridge-id">Мост Дьявола</label>
@@ -85,11 +84,11 @@
               <input class="section-attractions__input" type="checkbox" name="red-rocks" id="red-rocks-id"></input>
               <label class="section-attractions__label" for="red-rocks-id">Красные скалы</label>
             </fieldset>
-            <fieldset class="feedback__section section-experience">
+            <fieldset class="form__section section-experience">
               <legend class="section-experience__title">Опишите свои эмоции:</legend>
               <textarea class="section-experience__description" name="experience-description" rows="#" cols="#" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button class=" feedback__submit btn" type="submit">Отправить отзыв</button>
+            <button class="form__submit btn" type="submit">Отправить отзыв</button>
           </form>
         </section>
       </div>
