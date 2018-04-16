@@ -34,7 +34,7 @@
                 HTML Academy
                 </a>
               </li>
-            <ul>
+            </ul>
           </nav>
         </div>
         <img class="page-header__city-image" src="http://placehold.it/150x100" width="150" height="100" alt="Город Седона">
@@ -50,8 +50,10 @@
           <ul class="gallery-photo__list">
             <li class="gallery-photo__item">
               <figure class="post">
-                <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Вид на горы в Седоне">
-                <figcaption class="post__info caption">
+                <a class="post__link" href="#">
+                  <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Вид на горы в Седоне">
+                </a>
+                <figcaption class="post__caption caption">
                   <p class="caption__title">Народные просторы</p>
                   <p class="caption__author">Автор фото: Борис</p>
                   <button class="caption__like-icon" type="submit">Нравится</button>
@@ -61,8 +63,10 @@
             </li>
             <li class="gallery-photo__item">
               <figure class="post">
-                <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Местный кактус">
-                <figcaption class="post__info caption">
+                <a class="post__link" href="#">
+                  <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Местный кактус">
+                </a>
+                <figcaption class="post__caption caption">
                   <p class="caption__title">Местная растительность</p>
                   <p class="caption__author">Автор фото: Сергей</p>
                   <button class="caption__like-icon" type="submit">Нравится</button>
@@ -72,8 +76,10 @@
             </li>
             <li class="gallery-photo__item">
               <figure class="post">
-                <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Дорога в горах">
-                <figcaption class="post__info caption">
+                <a class="post__link" href="#">
+                  <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Дорога в горах">
+                </a>
+                <figcaption class="post__caption caption">
                   <p class="caption__title">Дорога на север</p>
                   <p class="caption__author">Автор фото: Петр</p>
                   <button class="caption__like-icon" type="submit">Нравится</button>
@@ -83,8 +89,10 @@
             </li>
             <li class="gallery-photo__item">
               <figure class="post">
-                <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото Моста Дьявола">
-                <figcaption class="post__info caption">
+                <a class="post__link" href="#">
+                  <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото Моста Дьявола">
+                </a>
+                <figcaption class="post__caption caption">
                   <p class="caption__title">Мост Дьявола</p>
                   <p class="caption__author">Автор фото: Антон</p>
                   <button class="caption__like-icon" type="submit">Нравится</button>
@@ -95,11 +103,32 @@
           </ul>
         </section>
         <section class="gallery-video">
-          <b class="gallery-video__slogan">Все еще сомневаетесь?</b>
+          <h2 class="gallery-video__title">Все еще сомневаетесь?</h2>
           <p class="gallery-video__intro">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
-          <video class="gallery-video__item "src="#" width="300" height="200" controls></video>
+          <div class="gallery-video__item recording">
+            <img class="recording__image" src="http://placehold.it/150x100" width="150" height="100" alt="Видео путешествия в Седону">
+            <div class="recording__controls controls">
+              <div class="controls__progress-container">
+                <div class="controls__scale"></div>
+                <div class="controls__porgress-indicator"></div>
+              </div>
+              <div class="controls__actions-container">
+                <ul class="controls__actions-list">
+                  <li class="controls__action-item">
+                    <button class="controls__icon controls__icon--repeat" type="submit">Повторное воспроизведение</button>
+                  </li>
+                  <li class="controls__action-item">
+                    <button class="controls__icon controls__icon--subtitles" type="submit">Субтитры</button>
+                  </li>
+                  <li class="controls__action-item">
+                    <button class="controls__icon controls__icon--full-screen" type="submit">Полноэкранный режим</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
