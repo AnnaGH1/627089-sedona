@@ -1,0 +1,15 @@
+.hotel__wrapper {
+  text-align: center;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+
+.hotel__title {
+  margin: 0;
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.hotel__description {
+  color: $grey;
+}

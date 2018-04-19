@@ -1,0 +1,16 @@
+.subject {
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+
+.subject__title {
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.subject__description {
+  line-height: 21px;
+  font-size: 14px;
+  color: $grey;
+}

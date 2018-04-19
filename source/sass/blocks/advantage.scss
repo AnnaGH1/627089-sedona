@@ -1,0 +1,33 @@
+.advantage__wrapper {
+  background-color: $bg-pale;
+  &--first {
+    background-color: $bg-blue;
+    color: $white;
+  }
+  &--second {
+    background-color: $bg-blue;
+    color: $white;
+  }
+}
+
+.advantage__title {
+  margin: 0;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.advantage__number {
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.advantage__description {
+  margin: 0;
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.advantage__advice-list {
+  list-style: none;
+}
