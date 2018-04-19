@@ -1,0 +1,18 @@
+.feedback {
+  margin: 0 25px;
+  font-family: $font-family;
+  margin-bottom: $section-bottom-margin;
+}
+
+.feedback__title {
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  text-transform: uppercase;
+}
+
+.feedback__slogan {
+  font-size: $font-size-text;
+  line-height: $line-height-text;
+  color: $font-grey;
+  text-transform: uppercase;
+}

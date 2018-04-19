@@ -1,0 +1,14 @@
+.gallery-photo {
+  font-family: $font-family;
+}
+
+.gallery-photo__intro {
+  font-size: $font-size-text;
+  line-height: $line-height-text;
+  color: $font-grey;
+}
+
+.gallery-photo__list {
+  padding: 0;
+  list-style: none;
+}

@@ -1,15 +1,21 @@
 .site-list {
   margin: 0;
+  padding: 0;
   font-family: $font-family;
   line-height: 40px;
-  font-size: 18px;
+  font-size: $font-size-title;
   font-weight: bold;
   background-color: $bg-blue;
   text-transform: uppercase;
   list-style: none;
+}
 
-  &__link {
-    color: $white;
-    text-decoration: none;
-  }
+.site-list__item {
+  text-align: center;
+}
+
+.site-list__link {
+  display: inline-block;
+  color: $font-white;
+  text-decoration: none;
 }

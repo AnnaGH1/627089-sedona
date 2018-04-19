@@ -1,23 +1,21 @@
 .features__wrapper {
-  text-align: center;
   font-family: $font-family;
   text-transform: uppercase;
 }
 
 .features__title {
-  line-height: 26px;
-  font-size: 18px;
+  line-height: $line-height-title;
+  font-size: $font-size-title;
   font-weight: bold;
 }
 
 .features__intro {
   line-height: 21px;
-  font-size: 14px;
+  font-size: $font-size-text;
 }
 
 .features__list {
   margin: 0;
   padding-left: 0;
-  text-align: center;
   list-style: none;
 }

@@ -1,11 +1,13 @@
 .btn {
   display: inline-block;
+  box-sizing: border-box;
   width: 280px;
   vertical-align: middle;
   text-align: center;
   line-height: 58px;
   font-size: 21px;
-  color: $white;
+  text-transform: uppercase;
+  color: $font-white;
   background-color: $bg-blue;
   font-weight: bold;
   text-decoration: none;

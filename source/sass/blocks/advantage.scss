@@ -1,33 +1,36 @@
 .advantage__wrapper {
-  background-color: $bg-pale;
+  background-color: $bg-grey;
+
   &--first {
     background-color: $bg-blue;
-    color: $white;
+    color: $font-white;
   }
+
   &--second {
     background-color: $bg-blue;
-    color: $white;
+    color: $font-white;
   }
 }
 
 .advantage__title {
   margin: 0;
-  line-height: 26px;
-  font-size: 18px;
+  line-height: $line-height-title;
+  font-size: $font-size-title;
   font-weight: bold;
 }
 
 .advantage__number {
   line-height: 21px;
-  font-size: 14px;
+  font-size: $font-size-text;
 }
 
 .advantage__description {
   margin: 0;
   line-height: 21px;
-  font-size: 14px;
+  font-size: $font-size-text;
 }
 
 .advantage__advice-list {
   list-style: none;
+  padding: 0;
 }

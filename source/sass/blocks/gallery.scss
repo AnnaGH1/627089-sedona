@@ -1,0 +1,11 @@
+.gallery {
+  margin: 0 25px;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+
+.gallery__title {
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+}

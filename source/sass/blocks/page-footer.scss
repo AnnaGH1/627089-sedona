@@ -1,13 +1,12 @@
-.page-footer__wrapper {
-  text-align: center;
+.page-footer {
+  margin: 0 25px;
 }
 
 .page-footer__slogan {
   display: block;
   font-family: $font-family;
-  line-height: 26px;
+  line-height: $line-height-title;
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $black;
 }
