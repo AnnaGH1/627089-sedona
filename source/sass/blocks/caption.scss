@@ -1,17 +1,12 @@
-.caption {
-  font-size: $font-size-text;
-  line-height: $line-height-text;
+.caption__title {
+  font-weight: bold;
+}
 
-  &__title {
-    font-weight: bold;
-  }
+.caption__author {
+  color: $font-grey;
+  text-transform: none;
+}
 
-  &__author {
-    color: $font-grey;
-    text-transform: none;
-  }
-
-  &__like-number {
-    font-weight: bold;
-  }
+.caption__like-number {
+  font-weight: bold;
 }

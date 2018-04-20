@@ -1,18 +1,14 @@
 .feedback {
-  margin: 0 25px;
-  font-family: $font-family;
-  margin-bottom: $section-bottom-margin;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: $margin-bottom-1;
 }
 
 .feedback__title {
-  font-size: $font-size-title;
-  line-height: $line-height-title;
-  text-transform: uppercase;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
 }
 
 .feedback__slogan {
-  font-size: $font-size-text;
-  line-height: $line-height-text;
   color: $font-grey;
-  text-transform: uppercase;
 }

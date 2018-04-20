@@ -1,33 +1,6 @@
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-}
-
-
+@import "normalize.scss";
 @import "variables.scss";
+@import "base.scss";
 @import "blocks/btn.scss";
 @import "blocks/page-header.scss";
 @import "blocks/nav-main.scss";
