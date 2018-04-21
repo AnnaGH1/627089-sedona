@@ -2,14 +2,9 @@
   padding: 33px 20px;
   background-color: $bg-grey;
 
-  &--first {
-    background-color: $bg-blue;
-    color: $font-white;
-  }
-
+  &--first,
   &--second {
     background-color: $bg-blue;
-    color: $font-white;
   }
 }
 
@@ -18,15 +13,32 @@
   line-height: $line-height-1;
   font-size: $font-size-1;
   font-weight: bold;
+
+  &--first,
+  &--second {
+    color: $font-white;
+  }
 }
 
 .advantage__number {
   line-height: 21px;
+  color: $font-grey;
+
+  &--first,
+  &--second {
+    color: $font-white;
+  }
 }
 
 .advantage__description {
   margin: 0;
   line-height: 21px;
+  color: $font-grey;
+
+  &--first,
+  &--second {
+    color: $font-white;
+  }
 }
 
 .advantage__advice-list {
