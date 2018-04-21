@@ -1,0 +1,19 @@
+.controls {
+  width: 280px;
+}
+
+.controls__progress-container {
+  height: 45px;
+  background-color: $bg-controls-1;
+}
+
+.controls__actions-container {
+  height: 66px;
+  background-color: $bg-controls-2;
+}
+
+.controls__actions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

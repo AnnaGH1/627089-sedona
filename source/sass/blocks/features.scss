@@ -1,0 +1,18 @@
+.features__title {
+  padding: 33px 20px;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: bold;
+}
+
+.features__intro {
+  padding: 33px 20px;
+  line-height: $line-height-1;
+  color: $font-grey;
+}
+
+.features__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}

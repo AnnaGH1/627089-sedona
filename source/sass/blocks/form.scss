@@ -1,0 +1,73 @@
+.form__section {
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.form__item {
+  margin: 20px 0;
+}
+
+.form__title {
+  padding: 0;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: bold;
+}
+
+.form__list {
+  padding: 0;
+  list-style: none;
+}
+
+.form__label {
+  line-height: $line-height-1;
+  color: $font-grey;
+}
+
+.form__mark-required {
+  color: $font-grey;
+}
+
+.form__label-choice {
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: bold;
+  border-width: 0;
+  background-color: $bg-input;
+}
+
+.form__input::placeholder {
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: bold;
+  color: $font-black;
+  opacity: 1;
+}
+
+.form__textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: bold;
+  border-width: 0;
+  background-color: $bg-input;
+}
+
+.form__textarea::placeholder {
+  font-size: $font-size-1;
+  line-height: $line-height-1;
+  font-weight: bold;
+  color: $font-black;
+  opacity: 1;
+}

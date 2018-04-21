@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -42,12 +43,14 @@
     </header>
     <main class="page-main feedback">
       <div class="feedback__wrapper">
-        <h1 class="feedback__title">Оставьте свой отзыв</h1>
-        <section class="feedback-content">
-          <p class="feedback-content__slogan">
+        <section class="feedback__intro">
+          <h1 class="feedback__title">Оставьте свой отзыв</h1>
+          <p class="feedback__slogan">
             Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
-          <form class="feedback-content__form form" action="https://echo.htmlacademy.ru" method="post">
+        </section>
+        <section class="feedback__content">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__section">
               <legend class="form__title">Представьтесь:</legend>
               <ul class="form__list">
@@ -118,7 +121,7 @@
             </fieldset>
             <fieldset class="form__section">
               <legend class="form__title">Опишите свои эмоции:</legend>
-              <textarea class="form__input-text" name="experience-description" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__textarea" name="experience-description" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__submit btn" type="submit">Отправить отзыв</button>
           </form>
