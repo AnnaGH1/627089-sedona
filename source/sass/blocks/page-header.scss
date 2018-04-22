@@ -1,11 +1,24 @@
-.page-header {
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
   margin-bottom: $margin-bottom-1;
+}
+
+.page-header__nav-main {
+  // border: 1px solid magenta;
 }
 
 .page-header__logo-image {
   display: block;
+  margin: 0 auto;
 }
 
 .page-header__city-image {
-  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    margin-top: -56px;
+  }
 }

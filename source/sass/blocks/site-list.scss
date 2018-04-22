@@ -3,7 +3,6 @@
   padding: 0;
   line-height: 40px;
   font-size: $font-size-1;
-  font-weight: bold;
   background-color: $bg-blue;
   list-style: none;
 }
@@ -16,4 +15,28 @@
   display: inline-block;
   color: $font-white;
   text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    background-color: $bg-white;
+  }
+
+  .site-list__item {
+    flex-basis: 20%;
+  }
+
+  .site-list__item:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .site-list__link {
+    color: $font-black;
+  }
 }
