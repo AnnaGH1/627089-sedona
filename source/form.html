@@ -54,16 +54,16 @@
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__section">
               <legend class="form__title">Представьтесь:</legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--name">
+                <li class="form__item form__item--name">
                   <label class="form__label" for="user-name-id">Имя<span class="form__mark-required">*</span>:</label>
                   <input class="form__input" type="text" name="user-first-name" id="user-name-id" placeholder="Петр" required autofocus>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--name">
                   <label class="form__label" for="user-surname-id">Фамилия<span class="form__mark-required">*</span>:</label>
                   <input class="form__input" type="text" name="user-last-name" id="user-surname-id" placeholder="Иванов" required>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--name">
                   <label class="form__label" for="user-patronime-id">Отчество:</label>
                   <input class="form__input" type="text" name="user-middle-name" id="user-patronime-id" placeholder="Александрович">
                 </li>
@@ -71,12 +71,12 @@
             </fieldset>
             <fieldset class="form__section">
               <legend class="form__title">Контактная информация:</legend>
-              <ul class="form__list">
-                <li class="form__item">
-                  <label class="form__label" for="phone-id">Контактный телефон<span class="form__mark-required">*</span>:</label>
+              <ul class="form__list form__list--contact">
+                <li class="form__item--contact">
+                  <label class="form__label" for="phone-id"><span class="form__label-addition">Контактный</span> телефон<span class="form__mark-required">*</span>:</label>
                   <input class="form__input form__input--phone" type="tel" name="phone" id="phone-id" placeholder="Введите телефон" required>
                 </li>
-                <li class="form__item">
+                <li class="form__item--contact">
                   <label class="form__label" for="email-id">Электронная почта<span class="form__mark-required">*</span>:</label>
                   <input class="form__input form__input--email" type="email" name="email" id="email-id" placeholder="Введите e-mail" required>
                 </li>
@@ -84,16 +84,16 @@
             </fieldset>
             <fieldset class="form__section">
               <legend class="form__title">Ваше общее впечатление:</legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--rating">
+                <li class="form__item form__item--rating">
                   <input class="form__input-radio" type="radio" name="rating" value="positive" id="rating-positive-id" checked>
                   <label class="form__label-choice" for="rating-positive-id">Скорее положительное</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--rating">
                   <input class="form__input-radio" type="radio" name="rating" value="negative" id="rating-negative-id">
                   <label class="form__label-choice" for="rating-negative-id">Скорее отрицательное</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--rating">
                   <input class="form__input-radio" type="radio" name="rating" value="neutral" id="rating-neutral-id">
                   <label class="form__label-choice" for="rating-neutral-id">Затрудняюсь ответить</label>
                 </li>
@@ -101,20 +101,20 @@
             </fieldset>
             <fieldset class="form__section">
               <legend class="form__title">Посещенные достопримечательности:</legend>
-              <ul class="form__list">
-                <li class="form__item">
+              <ul class="form__list form__list--attractions">
+                <li class="form__item form__item--attraction">
                   <input class="form__input-checkbox" type="checkbox" name="devils-bridge" id="devils-bridge-id" checked>
                   <label class="form__label-choice" for="devils-bridge-id">Мост Дьявола</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--attraction">
                   <input class="form__input-checkbox" type="checkbox" name="bell-rock" id="bell-rock-id" checked>
                   <label class="form__label-choice" for="bell-rock-id">Гора-Колокол</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--attraction">
                   <input class="form__input-checkbox" type="checkbox" name="slide-park" id="slide-park-id" checked>
                   <label class="form__label-choice" for="slide-park-id">Слайд-парк</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--attraction">
                   <input class="form__input-checkbox" type="checkbox" name="red-rocks" id="red-rocks-id">
                   <label class="form__label-choice" for="red-rocks-id">Красные скалы</label>
                 </li>
@@ -125,6 +125,7 @@
               <textarea class="form__textarea" name="experience-description" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__submit btn" type="submit">Отправить отзыв</button>
+            <p class="form__note">* - обязательные поля</p>
           </form>
         </section>
       </div>
