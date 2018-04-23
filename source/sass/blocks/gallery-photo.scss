@@ -6,3 +6,28 @@
   padding: 0;
   list-style: none;
 }
+
+.gallery-photo__item {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-photo__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-photo__item {
+    width: 50%;
+
+    &:first-child {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-photo__item {
+    width: 33.33%;
+  }
+}
