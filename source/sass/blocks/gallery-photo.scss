@@ -20,14 +20,19 @@
   .gallery-photo__item {
     width: 50%;
 
-    &:first-child {
+    &--full {
       width: 100%;
     }
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .gallery-photo__item {
     width: 33.33%;
+
+    &--full {
+      width: 100%;
+    }
   }
 }
