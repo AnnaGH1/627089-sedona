@@ -1,17 +1,14 @@
-.advantage:nth-child(3),
-.advantage:nth-child(4),
-.advantage:nth-child(5) {
+.advantage {
   background-color: $bg-grey;
+
+  &--full {
+    background-color: $bg-blue;
+  }
 }
 
 .advantage__wrapper {
   box-sizing: border-box;
   padding: 33px 20px;
-
-  &--first,
-  &--second {
-    background-color: $bg-blue;
-  }
 }
 
 .advantage__title {
@@ -20,8 +17,7 @@
   font-size: $font-size-1;
   font-weight: bold;
 
-  &--first,
-  &--second {
+  &--full {
     color: $font-white;
   }
 }
@@ -30,8 +26,7 @@
   line-height: 21px;
   color: $font-grey;
 
-  &--first,
-  &--second {
+  &--full {
     color: $font-white;
   }
 }
@@ -41,8 +36,7 @@
   line-height: 21px;
   color: $font-grey;
 
-  &--first,
-  &--second {
+  &--full {
     color: $font-white;
   }
 }
@@ -50,8 +44,9 @@
 .advantage__advice-list {
   list-style: none;
   padding: 0;
-  margin-top: $margin-top-2;
-  margin-bottom: $margin-bottom-2;
+  padding-top: $distance-vertical-2;
+  padding-bottom: $distance-vertical-2;
+  background-color: $bg-white;
 }
 
 .advantage__advice-item {
@@ -59,55 +54,43 @@
   padding-right: 20px;
 }
 
-.advantage__photo {
+.advantage__photo--full {
   display: block;
 }
 
 @media (min-width: $tablet-width) {
   .advantage {
     display: flex;
-  }
-
-  .advantage:first-child {
     flex-wrap: wrap;
+    width: 33.33%;
+
+    &--full {
+      width: 100%;
+    }
+
+    &--full-reverse {
+      flex-direction: row-reverse;
+    }
   }
 
-  .advantage__wrapper--first {
+  .advantage__wrapper--full {
     width: 33.33%;
   }
 
-  .advantage__photo--first {
-    flex-grow: 1;
-  }
-
-  .advantage:nth-child(2) {
-    flex-direction: row-reverse;
-    width: 100%;
-  }
-
-  .advantage__wrapper--second {
-    width: 33.33%;
-  }
-
-  .advantage__photo--second {
+  .advantage__photo--full {
     width: 66.67%;
-  }
-
-  .advantage:nth-child(3),
-  .advantage:nth-child(4),
-  .advantage:last-child {
-    width: 33.33%;
   }
 
   .advantage__advice-list {
     display: flex;
+    width: 100%;
   }
 
   .advantage__advice-item {
     width: 33.33%;
   }
 
-  .advantage__advice-item:nth-child(2) {
+  .advantage__advice-item--souvenirs {
     order: 2;
   }
 }
