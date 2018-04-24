@@ -92,25 +92,25 @@
   }
 
   .form__section {
-    &:nth-of-type(1) {
+    &--name {
       width: 50%;
     }
 
-    &:nth-of-type(2) {
+    &--contact {
       flex-direction: column;
       width: 100%;
     }
 
-    &:nth-of-type(3) {
+    &--rating {
       width: 50%;
       order: -1;
     }
 
-    &:nth-of-type(4) {
+    &--attractions {
       width: 100%;
     }
 
-    &:nth-of-type(5) {
+    &--experience {
       width: 100%;
     }
   }
@@ -168,5 +168,9 @@
 
   .form__list--attractions {
     flex-wrap: nowrap;
+  }
+
+  .form__item--attraction {
+    width: 25%;
   }
 }
