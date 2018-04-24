@@ -1,8 +1,11 @@
 .hotel__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 33px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: $margin-bottom-1;
+  margin-bottom: $distance-vertical-1;
 }
 
 .hotel__title {

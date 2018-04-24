@@ -1,4 +1,5 @@
 .form__section {
+  box-sizing: border-box;
   border-width: 0;
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@
 }
 
 .form__list {
+  box-sizing: border-box;
   padding: 0;
   list-style: none;
 }
@@ -37,6 +39,7 @@
 }
 
 .form__input {
+  box-sizing: border-box;
   width: 100%;
   padding: 10px;
   font-size: $font-size-1;
@@ -55,8 +58,10 @@
 }
 
 .form__textarea {
+  box-sizing: border-box;
   width: 100%;
   padding: 10px;
+  margin-bottom: $distance-vertical-1;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
@@ -70,4 +75,95 @@
   font-weight: bold;
   color: $font-black;
   opacity: 1;
+}
+
+.form__submit {
+  width: 100%;
+}
+
+.form__note {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__section {
+    &--name {
+      width: 50%;
+    }
+
+    &--contact {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &--rating {
+      width: 50%;
+      order: -1;
+    }
+
+    &--attractions,
+    &--experience {
+      width: 100%;
+    }
+  }
+
+  .form__list {
+    display: flex;
+    flex-direction: column;
+
+    &--attractions {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .form__item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: baseline;
+
+    &--attraction {
+      width: 50%;
+    }
+  }
+
+  .form__submit {
+    width: 40%;
+    margin-right: auto;
+  }
+
+  .form__note {
+    display: block;
+    margin-left: auto;
+    color: $font-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list--contact {
+    flex-direction: row;
+  }
+
+  .form__item--contact {
+    display: flex;
+    width: 50%;
+    align-items: baseline;
+  }
+
+  .form__label-addition {
+    display: none;
+  }
+
+  .form__label {
+    white-space: nowrap;
+  }
+
+  .form__item--attraction {
+    width: 25%;
+  }
 }
