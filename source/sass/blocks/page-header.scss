@@ -4,13 +4,10 @@
   margin-bottom: $distance-vertical-1;
 }
 
-.page-header__nav-main {
-  // border: 1px solid magenta;
-}
-
 .page-header__logo-image {
   display: block;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .page-header__city-image {
@@ -18,7 +15,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__logo-image {
+  .page-header__logo {
     margin-top: -56px;
+    z-index: 2;
   }
 }
