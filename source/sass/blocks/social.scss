@@ -1,9 +1,48 @@
 .social__list {
-  width: 200px;
+  width: 150px;
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-bottom: $distance-vertical-2;
   list-style: none;
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  width: 47px;
+  height: 48px;
+  background-color: $bg-blue-1;
+  font-size: 0;
+
+  &:hover {
+    background-color: $bg-blue-2;
+  }
+
+  &:active {
+    background-color: $bg-blue-3;
+  }
+}
+
+.social__icon {
+  position: absolute;
+  top: 15px;
+
+  &--twitter {
+    left: 16px;
+  }
+
+  &--facebook {
+    left: 20px;
+  }
+
+  &--youtube {
+    left: 14px;
+  }
+
+  &:active {
+    path {
+      fill: $font-white-30;
+    }
+  }
 }
