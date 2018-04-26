@@ -65,7 +65,21 @@
 
   .site-list__link {
     color: $font-black;
+    padding: 10px 0;
   }
+
+  .site-list__link--active {
+    color: $font-brown;
+
+    &:hover {
+      color: $font-dark-brown;
+    }
+
+    &:active {
+      color: $font-brown-30;
+    }
+  }
+
 
   .site-list__link[href] {
     &:hover {
