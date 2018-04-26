@@ -11,4 +11,18 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+
+  &:hover {
+    background-color: $bg-blue-2;
+  }
+
+  &:active {
+    background-color: $bg-blue-3;
+    color: $font-white-30;
+  }
+
+  &:disabled {
+    background-color: $bg-light-grey;
+    color: $font-white;
+  }
 }

@@ -5,6 +5,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding-top: $distance-vertical-2;
+  // outline: 1px solid magenta;
 }
 
 .page-footer__slogan {
@@ -26,6 +27,7 @@
     align-items: flex-start;
     width: $tablet-width;
     margin: 0 auto;
+    // outline: 1px solid green;
   }
 
   .page-footer__slogan {
@@ -37,5 +39,6 @@
   .page-footer__wrapper {
     width: $desktop-width;
     margin: 0 auto;
+    // outline: 1px solid aqua;
   }
 }

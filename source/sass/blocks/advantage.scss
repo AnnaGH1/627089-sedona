@@ -9,6 +9,7 @@
 .advantage__wrapper {
   box-sizing: border-box;
   padding: 33px 20px;
+  text-align: center;
 }
 
 .advantage__title {
@@ -41,19 +42,6 @@
   }
 }
 
-.advantage__advice-list {
-  list-style: none;
-  padding: 0;
-  padding-top: $distance-vertical-2;
-  padding-bottom: $distance-vertical-2;
-  background-color: $bg-white;
-}
-
-.advantage__advice-item {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .advantage__photo--full {
   display: block;
 }
@@ -78,19 +66,11 @@
   }
 
   .advantage__photo--full {
-    width: 66.67%;
+    // width: 66.67%;
   }
 
   .advantage__advice-list {
     display: flex;
     width: 100%;
-  }
-
-  .advantage__advice-item {
-    width: 33.33%;
-  }
-
-  .advantage__advice-item--souvenirs {
-    order: 2;
   }
 }
