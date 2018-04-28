@@ -51,6 +51,17 @@
   .subject__title {
     padding-top: 100px;
     padding-bottom: 5px;
+    font-size: $font-size-3;
+  }
+
+  .subject__description {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    &--food {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   .subject {
@@ -58,7 +69,6 @@
       top: 35px;
       left: 105px;
       outline: 1px solid orange;
-
     }
 
     &--accomodation::before {

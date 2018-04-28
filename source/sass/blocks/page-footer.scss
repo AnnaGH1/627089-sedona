@@ -27,10 +27,13 @@
     align-items: flex-start;
     width: $tablet-width;
     margin: 0 auto;
-    // outline: 1px solid green;
   }
 
   .page-footer__slogan {
+    padding-top: 10px;
+  }
+
+  .page-footer__copyright {
     padding-top: 10px;
   }
 }
