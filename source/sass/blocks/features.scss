@@ -31,6 +31,7 @@
 @media (min-width: $tablet-width) {
   .features__wrapper {
     width: $tablet-width;
+    // width: 100%;
     margin: 0 auto;
     // outline: 1px solid green;
   }
@@ -38,6 +39,7 @@
   .features__title {
     padding: 0 120px;
     padding-top: $distance-vertical-1;
+    padding-bottom: 5px;
     font-size: $font-size-3;
   }
 
@@ -55,7 +57,18 @@
 @media (min-width: $desktop-width) {
   .features__wrapper {
     width: $desktop-width;
+    // width: 100%;
     margin: 0 auto;
     // outline: 1px solid aqua;
+  }
+
+  .features__title {
+    padding: 0 350px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+  }
+
+  .features__intro {
+    margin-bottom: 40px;
   }
 }

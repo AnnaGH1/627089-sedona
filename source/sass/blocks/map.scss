@@ -26,12 +26,14 @@
 @media (min-width: $tablet-width) {
   .map__wrapper {
     width: $tablet-width;
+    // width: 100%;
     margin: 0 auto;
     // outline: 1px solid green;
   }
 
   .map__state {
-    width: 768px;
+    width: 100%;
+    // width: 768px;
     height: 350px;
 
     &::before {
@@ -44,17 +46,18 @@
 @media (min-width: $desktop-width) {
   .map__wrapper {
     width: $desktop-width;
+    // width: 100%;
     margin: 0 auto;
     // outline: 1px solid aqua;
-
-    &::before {
-      top: 150px;
-      left: 140px;
-    }
   }
 
   .map__state {
     width: 1200px;
     height: 350px;
+
+    &::before {
+      top: 162px;
+      left: 587px;
+    }
   }
 }

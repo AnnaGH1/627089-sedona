@@ -28,6 +28,7 @@
   .page-header__wrapper {
     position: relative;
     width: $tablet-width;
+    // width: 100%;
     margin: 0 auto;
   }
 
@@ -48,6 +49,7 @@
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     width: $desktop-width;
+    // width: 100%;
     margin: 0 auto;
   }
 
