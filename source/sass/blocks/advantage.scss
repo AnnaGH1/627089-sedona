@@ -124,7 +124,8 @@
       padding-top: 38px;
       padding-left: 35px;
       padding-right: 36px;
-      width: 256px;
+      // width: 256px;
+      width: 33.33%;
     }
   }
 
@@ -167,8 +168,10 @@
   }
 
   .advantage__photo--full {
-    width: 512px;
-    height: 256px;
+    // width: 512px;
+    width: 66.67%;
+    // height: 256px;
+    height: auto;
   }
 
   .advantage__advice-list {
@@ -223,7 +226,7 @@
 
 
   .advantage__photo--full {
-    width: 800px;
+    // width: 800px;
     height: 256px;
   }
 }

@@ -5,7 +5,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding-top: 38px;
-  // outline: 1px solid magenta;
+  outline: 1px solid magenta;
 }
 
 .page-footer__slogan {
@@ -25,8 +25,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    width: $tablet-width;
-    // width: 100%;
+    // width: $tablet-width;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -45,8 +45,8 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: $desktop-width;
-    // width: 100%;
+    // width: $desktop-width;
+    width: 100%;
     margin: 0 auto;
     // outline: 1px solid aqua;
   }

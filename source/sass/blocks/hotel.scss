@@ -37,8 +37,8 @@
 
 @media (min-width: $tablet-width) {
   .hotel__wrapper {
-    width: $tablet-width;
-    // width: 100%;
+    // width: $tablet-width;
+    width: 100%;
     margin: 0 auto;
     padding: 0 100px;
     padding-top: 62px;
@@ -66,8 +66,8 @@
 
 @media (min-width: $desktop-width) {
   .hotel__wrapper {
-    width: $desktop-width;
-    // width: 100%;
+    // width: $desktop-width;
+    width: 100%;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 65px;

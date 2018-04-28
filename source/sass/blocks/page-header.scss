@@ -27,8 +27,8 @@
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     position: relative;
-    width: $tablet-width;
-    // width: 100%;
+    // width: $tablet-width;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -40,7 +40,8 @@
   }
 
   .page-header__city-image {
-    width: 768px;
+    width: 100%;
+    // width: 768px;
     height: 518px;
     margin-top: 0;
   }
@@ -48,12 +49,13 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    width: $desktop-width;
-    // width: 100%;
+    // width: $desktop-width;
+    width: 100%;
     margin: 0 auto;
   }
 
   .page-header__city-image {
-    width: 1200px;
+    width: 100%;
+    // width: 1200px;
   }
 }
