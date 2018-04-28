@@ -4,20 +4,20 @@
   align-items: center;
   width: $mobile-width;
   margin: 0 auto;
-  padding-top: $distance-vertical-2;
+  padding-top: 38px;
   // outline: 1px solid magenta;
 }
 
 .page-footer__slogan {
   display: block;
-  margin-bottom: $distance-vertical-2;
+  margin-bottom: 35px;
   line-height: $line-height-1;
   font-size: 21px;
   font-weight: bold;
 }
 
 .page-footer__social {
-  margin-bottom: $distance-vertical-1;
+  margin-bottom: $distance-vertical-2;
 }
 
 @media (min-width: $tablet-width) {

@@ -3,7 +3,6 @@
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
-  margin-bottom: $distance-vertical-1;
 }
 
 .page-header__logo {
@@ -20,6 +19,7 @@
 .page-header__city-image {
   display: block;
   margin: 0 auto;
+  margin-top: -27px;
   width: 320px;
   height: 389px;
 }
@@ -41,6 +41,7 @@
   .page-header__city-image {
     width: 768px;
     height: 518px;
+    margin-top: 0;
   }
 }
 

@@ -2,18 +2,22 @@
   width: $mobile-width;
   margin: 0 auto;
   text-align: center;
-  // outline: 1px solid magenta;
+  outline: 1px solid blue;
 }
 
 .features__title {
-  padding: 33px 20px;
+  margin: 0;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 40px;
+  padding-bottom: 5px;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
 }
 
 .features__intro {
-  padding: 33px 20px;
+  padding: 10px 20px;
   line-height: $line-height-1;
   color: $font-grey;
 }
@@ -29,6 +33,16 @@
     width: $tablet-width;
     margin: 0 auto;
     // outline: 1px solid green;
+  }
+
+  .features__title {
+    padding: 0 120px;
+    padding-top: $distance-vertical-1;
+  }
+
+  .features__intro {
+    margin-top: 15px;
+    margin-bottom: 42px;
   }
 
   .features__list {
