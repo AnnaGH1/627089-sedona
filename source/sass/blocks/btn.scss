@@ -1,14 +1,28 @@
 .btn {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
-  padding: 18px 47px;
+  padding: 18px 18px;
   text-align: center;
   font-size: 21px;
   line-height: $line-height-1;
   color: $font-white;
-  background-color: $bg-blue;
+  background-color: $bg-blue-1;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+
+  &:hover {
+    background-color: $bg-blue-2;
+  }
+
+  &:active {
+    background-color: $bg-blue-3;
+    color: $font-white-30;
+  }
+
+  &:disabled {
+    background-color: $bg-grey-3;
+    color: $font-white;
+  }
 }

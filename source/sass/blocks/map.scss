@@ -1,8 +1,64 @@
 .map__wrapper {
   display: flex;
+  width: $mobile-width;
+  margin: 0 auto;
+  // outline: 1px solid magenta;
 }
 
 .map__state {
+  position: relative;
   display: block;
-  width: 100%;
+  width: 320px;
+  height: 350px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 160px;
+    left: 145px;
+    // background-image: url("../../img/icon-map-marker.svg");
+    outline: 1px solid green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    // width: $tablet-width;
+    width: 100%;
+    margin: 0 auto;
+    // outline: 1px solid green;
+  }
+
+  .map__state {
+    width: 100%;
+    // width: 768px;
+    height: 350px;
+
+    &::before {
+      top: 165px;
+      left: 370px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    // width: $desktop-width;
+    width: 100%;
+    margin: 0 auto;
+    // outline: 1px solid aqua;
+  }
+
+  .map__state {
+    width: 100%;
+    // width: 1200px;
+    height: 350px;
+
+    &::before {
+      top: 162px;
+      left: 587px;
+    }
+  }
 }

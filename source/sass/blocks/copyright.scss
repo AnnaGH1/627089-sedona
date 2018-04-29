@@ -1,8 +1,43 @@
 .copyright {
   display: flex;
+  align-items: top;
   line-height: 26px;
 }
 
 .copyright__text {
   margin: 0;
+  padding-top: 2px;
+  padding-left: 15px;
+}
+
+.copyright__link {
+  margin-right: 5px;
+  font-size: 0;
+}
+
+.copyright__icon {
+  padding: 0 10px;
+
+  &:hover {
+    path {
+      fill: $font-blue;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $font-light-grey;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+
+  .copyright__link {
+    margin-left: 2px;
+  }
 }
