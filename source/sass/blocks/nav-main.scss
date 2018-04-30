@@ -1,61 +1,76 @@
+.nav-main {
+  position: relative;
+  width: $mobile-width;
+}
+
+.nav-main__site-list {
+  width: $mobile-width;
+}
+
+.nav-main__toggle {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.nav-main--closed .nav-main__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 22px;
+  background-image: url("../../img/icon-menu.svg");
+}
+
+.nav-main--opened .nav-main__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 22px;
+  background-image: url("../../img/icon-cross.svg");
+}
+
 @media (max-width: $mobile-width-only) {
-  .nav-main {
-    position: relative;
-    min-width: 320px;
-  }
-
-  .nav-main__toggle {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    display: block;
-    width: 23px;
-    height: 22px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .nav-main--closed .nav-main__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 23px;
-    height: 22px;
-    background-image: url("../../img/icon-menu.svg");
-    background-repeat: no-repeat;
-  }
-
-  .nav-main--opened .nav-main__toggle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 23px;
-    height: 22px;
-    background-image: url("../../img/icon-cross.svg");
-    background-repeat: no-repeat;
-  }
-
   .nav-main--closed .nav-main__site-list {
     display: none;
   }
 
-  .nav-main--nojs {
-    .nav-main__toggle {
-      display: none;
-    }
+  .nav-main--opened .nav-main__site-list {
+    position: absolute;
+    top: 0;
+    z-index: 4;
+  }
 
-    .nav-main__site-list {
-      display: block;
-    }
+  .nav-main--nojs .nav-main__toggle {
+    display: none;
+  }
+
+  .nav-main--nojs .nav-main__site-list {
+    display: block;
+    position: static;
   }
 }
 
-
 @media (min-width: $tablet-width) {
+  .nav-main {
+    width: 100%;
+  }
+
   .nav-main__toggle {
     display: none;
+  }
+
+  .nav-main__site-list {
+    width: 100%;
   }
 }

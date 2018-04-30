@@ -3,6 +3,7 @@
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
+  // outline: 3px solid blue;
 }
 
 .page-header__logo {
@@ -10,6 +11,7 @@
   margin: 0 auto;
   width: 102px;
   height: 83px;
+  z-index: 2;
 }
 
 .page-header__logo-image {
@@ -37,6 +39,7 @@
     top: 0;
     left: 50%;
     margin-left: -51px;
+    z-index: 5;
   }
 
   .page-header__city-image {
