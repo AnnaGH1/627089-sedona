@@ -1,14 +1,28 @@
-.feedback {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: $distance-vertical-1;
+.feedback__wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  width: $mobile-width;
+  // outline: 1px solid green;
 }
 
 .feedback__title {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 12px;
   font-size: $font-size-1;
   line-height: $line-height-1;
 }
 
 .feedback__slogan {
+  padding-bottom: 4px;
   color: $font-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    margin: 0 20px;
+    width: 100%;
+  }
 }

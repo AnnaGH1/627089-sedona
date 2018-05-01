@@ -1,30 +1,136 @@
 .form__section {
+  position: relative;
   box-sizing: border-box;
   border-width: 0;
   margin: 0;
   padding: 0;
-}
+  padding-bottom: 10px;
 
-.form__item {
-  margin: 20px 0;
+  &--attractions {
+    padding-bottom: 9px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: $mobile-width;
+    height: 1px;
+    background-color: $bg-grey-3;
+  }
+
+  &--contact::before {
+    top: 3px;
+  }
+
+  &--rating::before {
+    top: 7px;
+  }
+
+  &--attractions::before {
+    top: 15px;
+  }
+
+  &--experience::before {
+    top: 0;
+  }
 }
 
 .form__title {
   padding: 0;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  text-align: center;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
+
+  &--contact {
+    padding-top: 22px;
+    padding-bottom: 10px;
+  }
+
+  &--rating {
+    padding-top: 28px;
+  }
+
+  &--attractions {
+    padding-top: 35px;
+  }
+
+  &--experience {
+    padding-bottom: 15px;
+  }
 }
 
 .form__list {
   box-sizing: border-box;
+  margin: 0;
   padding: 0;
   list-style: none;
+
+  &--contact {
+    margin-bottom: 10px;
+  }
+}
+
+.form__item {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &--contact {
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: $bg-grey-5;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      // outline: 1px solid blue;
+    }
+  }
+
+  &--phone::before {
+    background-image: url("../../img/icon-phone.svg");
+  }
+
+  &--email::before {
+    background-image: url("../../img/icon-mail.svg");
+  }
+
+  &--rating {
+    padding-top: 26px;
+    padding-bottom: 18px;
+    padding-left: 78px;
+  }
+
+  &--attraction {
+    padding-top: 21px;
+    padding-bottom: 34px;
+    padding-left: 80px;
+  }
 }
 
 .form__label {
+  padding-right: 15px;
   line-height: $line-height-1;
   color: $font-grey;
+
+  &--contact {
+    padding-bottom: 7px;
+    padding-left: 22px;
+  }
 }
 
 .form__mark-required {
@@ -41,12 +147,80 @@
 .form__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 17px;
+  padding-left: 22px;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
   border-width: 0;
   background-color: $bg-input;
+  // outline: 1px solid blue;
+}
+
+.form__input-radio + .form__label-choice::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: $bg-input;
+  border: 16px solid $bg-input;
+  border-radius: 50%;
+  // outline: 1px solid blue;
+}
+
+.form__input-radio:hover + .form__label-choice::before {
+  background-color: $bg-grey-3;
+  border: 16px solid $bg-grey-3;
+}
+
+.form__input-radio:active + .form__label-choice::before {
+  background-color: $bg-grey-4;
+  border: 16px solid $bg-grey-4;
+}
+
+.form__input-radio:checked + .form__label-choice::before,
+.form__input-radio:checked:hover + .form__label-choice::before {
+  background-color: $font-grey;
+}
+
+.form__input-radio:checked:active + .form__label-choice::before {
+  background-color: $input-radio-active;
+}
+
+.form__input-checkbox + .form__label-choice::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  border-radius: 10%;
+  background-color: $bg-input;
+}
+
+
+.form__input-checkbox:hover + .form__label-choice::before {
+  background-color: $bg-grey-3;
+}
+
+.form__input-checkbox:active + .form__label-choice::before {
+  background-color: $bg-grey-4;
+}
+
+.form__input-checkbox:checked + .form__label-choice::before,
+.form__input-checkbox:checked:hover + .form__label-choice::before {
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  // outline: 1px solid magenta;
+}
+
+.form__input-checkbox:checked:active + .form__label-choice::before {
+  background-image: url("../../img/icon-tick-active.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .form__input::placeholder {
@@ -60,8 +234,9 @@
 .form__textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
-  margin-bottom: $distance-vertical-1;
+  min-height: 160px;
+  padding: 16px 20px;
+  margin-bottom: 32px;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
@@ -78,6 +253,7 @@
 }
 
 .form__submit {
+  margin-bottom: 35px;
   width: 100%;
 }
 

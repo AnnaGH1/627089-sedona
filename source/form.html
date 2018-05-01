@@ -37,7 +37,7 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="#" width="102" height="83" alt="Герб города Седона">
         </a>
-        <img class="page-header__city-image" src="http://placehold.it/150x100" width="320" height="389" alt="Город Седона">
+        <img class="page-header__city-image page-header__city-image--feedback" src="http://placehold.it/150x100" width="320" height="389" alt="Город Седона">
       </div>
     </header>
     <main class="page-main feedback">
@@ -68,58 +68,58 @@
               </ul>
             </fieldset>
             <fieldset class="form__section form__section--contact">
-              <legend class="form__title">Контактная информация:</legend>
+              <legend class="form__title form__title--contact">Контактная информация:</legend>
               <ul class="form__list form__list--contact">
-                <li class="form__item--contact">
-                  <label class="form__label" for="phone-id"><span class="form__label-addition">Контактный</span> телефон<span class="form__mark-required">*</span>:</label>
+                <li class="form__item form__item--contact form__item--phone">
+                  <label class="form__label form__label--contact" for="phone-id"><span class="form__label-addition">Контактный</span> телефон<span class="form__mark-required">*</span>:</label>
                   <input class="form__input form__input--phone" type="tel" name="phone" id="phone-id" placeholder="Введите телефон" required>
                 </li>
-                <li class="form__item--contact">
-                  <label class="form__label" for="email-id">Электронная почта<span class="form__mark-required">*</span>:</label>
+                <li class="form__item form__item--contact form__item--email">
+                  <label class="form__label form__label--contact" for="email-id">Электронная почта<span class="form__mark-required">*</span>:</label>
                   <input class="form__input form__input--email" type="email" name="email" id="email-id" placeholder="Введите e-mail" required>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__section form__section--rating">
-              <legend class="form__title">Ваше общее впечатление:</legend>
+              <legend class="form__title form__title--rating">Ваше общее впечатление:</legend>
               <ul class="form__list form__list--rating">
                 <li class="form__item form__item--rating">
-                  <input class="form__input-radio" type="radio" name="rating" value="positive" id="rating-positive-id" checked>
+                  <input class="form__input-radio visually-hidden" type="radio" name="rating" value="positive" id="rating-positive-id" checked>
                   <label class="form__label-choice" for="rating-positive-id">Скорее положительное</label>
                 </li>
                 <li class="form__item form__item--rating">
-                  <input class="form__input-radio" type="radio" name="rating" value="negative" id="rating-negative-id">
+                  <input class="form__input-radio visually-hidden" type="radio" name="rating" value="negative" id="rating-negative-id">
                   <label class="form__label-choice" for="rating-negative-id">Скорее отрицательное</label>
                 </li>
                 <li class="form__item form__item--rating">
-                  <input class="form__input-radio" type="radio" name="rating" value="neutral" id="rating-neutral-id">
+                  <input class="form__input-radio visually-hidden" type="radio" name="rating" value="neutral" id="rating-neutral-id">
                   <label class="form__label-choice" for="rating-neutral-id">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__section form__section--attractions">
-              <legend class="form__title">Посещенные достопримечательности:</legend>
+              <legend class="form__title form__title--attractions">Посещенные достопримечательности:</legend>
               <ul class="form__list form__list--attractions">
                 <li class="form__item form__item--attraction">
-                  <input class="form__input-checkbox" type="checkbox" name="devils-bridge" id="devils-bridge-id" checked>
+                  <input class="form__input-checkbox visually-hidden" type="checkbox" name="devils-bridge" id="devils-bridge-id" checked>
                   <label class="form__label-choice" for="devils-bridge-id">Мост Дьявола</label>
                 </li>
                 <li class="form__item form__item--attraction">
-                  <input class="form__input-checkbox" type="checkbox" name="bell-rock" id="bell-rock-id" checked>
+                  <input class="form__input-checkbox visually-hidden" type="checkbox" name="bell-rock" id="bell-rock-id" checked>
                   <label class="form__label-choice" for="bell-rock-id">Гора-Колокол</label>
                 </li>
                 <li class="form__item form__item--attraction">
-                  <input class="form__input-checkbox" type="checkbox" name="slide-park" id="slide-park-id" checked>
+                  <input class="form__input-checkbox visually-hidden" type="checkbox" name="slide-park" id="slide-park-id" checked>
                   <label class="form__label-choice" for="slide-park-id">Слайд-парк</label>
                 </li>
                 <li class="form__item form__item--attraction">
-                  <input class="form__input-checkbox" type="checkbox" name="red-rocks" id="red-rocks-id">
+                  <input class="form__input-checkbox visually-hidden" type="checkbox" name="red-rocks" id="red-rocks-id">
                   <label class="form__label-choice" for="red-rocks-id">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__section form__section--experience">
-              <legend class="form__title">Опишите свои эмоции:</legend>
+              <legend class="form__title form__title--experience">Опишите свои эмоции:</legend>
               <textarea class="form__textarea" name="experience-description" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__submit btn" type="submit">Отправить отзыв</button>

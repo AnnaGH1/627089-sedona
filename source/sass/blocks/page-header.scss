@@ -1,9 +1,12 @@
+.page-header {
+  // outline: 3px solid blue;
+}
+
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
-  // outline: 3px solid blue;
 }
 
 .page-header__logo {
@@ -24,6 +27,10 @@
   margin-top: -27px;
   width: 320px;
   height: 389px;
+}
+
+.page-header__city-image--feedback {
+  height: 158px;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,6 +54,10 @@
     // width: 768px;
     height: 518px;
     margin-top: 0;
+  }
+
+  .page-header__city-image--feedback {
+    height: 158px;
   }
 }
 
