@@ -447,25 +447,146 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form__list--contact {
-    flex-direction: row;
+  .form__section {
+    &--name {
+      padding-left: 22px;
+    }
+
+    &--contact {
+      &::before,
+      &::after {
+        top: 56px;
+        width: 280px;
+      }
+    }
+
+    &--rating {
+      padding-left: 80px;
+    }
+
+    &--attractions {
+      &::before,
+      &::after {
+        top: 23px;
+        width: 280px;
+      }
+    }
+
+    &--experience {
+      &::before,
+      &::after {
+        top: 40px;
+        width: 280px;
+      }
+    }
   }
 
-  .form__item--contact {
-    display: flex;
-    width: 50%;
-    align-items: baseline;
+  .form__title {
+    &--name {
+      padding-bottom: 44px;
+    }
+
+    &--contact {
+      padding-bottom: 63px;
+    }
+
+    &--rating {
+      // text-align: center;
+    }
+
+    &--attractions {
+      padding: 0 280px;
+      padding-bottom: 35px;
+    }
   }
 
-  .form__label-addition {
-    display: none;
+  .form__list {
+    &--contact {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 44px;
+    }
+
+    &--attractions {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .form__item {
+    &--contact {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      align-items: baseline;
+    }
+
+    &--phone {
+      width: 42%;
+    }
+
+    &--email {
+      // width: 50%;
+    }
+
+    &--rating {
+      padding-left: 0;
+    }
+
+    &--attraction {
+      // outline: 1px solid red;
+
+      &:first-child {
+        width: 27%;
+        // padding-left: 82px;
+      }
+
+      &:nth-child(2) {
+        width: 27%;
+        // padding-left: 102px;
+      }
+
+      &:nth-child(3) {
+        width: 24%;
+        // padding-left: 119px;
+      }
+
+      &:last-child {
+        width: 22%;
+        // padding-left: 117px;
+      }
+    }
   }
 
   .form__label {
     white-space: nowrap;
+
+    &--contact {
+      padding-left: 0;
+    }
   }
 
-  .form__item--attraction {
-    width: 25%;
+  .form__label-choice {
+    text-align: center;
+  }
+
+  .form__input-radio + .form__label-choice::before {
+    top: 10px;
+    left: -75px;
+  }
+
+  .form__input-checkbox + .form__label-choice::before {
+    top: 10px;
+    left: 3px;
+  }
+
+  .form__submit {
+    width: 480px;
+    margin-bottom: 62px;
+  }
+
+  .form__label-addition {
+    display: none;
   }
 }

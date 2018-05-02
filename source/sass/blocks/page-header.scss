@@ -68,8 +68,21 @@
     margin: 0 auto;
   }
 
+  .page-header__logo {
+    margin-left: -88px;
+  }
+
+  .page-header__logo-image {
+    width: 187px;
+    height: 96px;
+  }
+
   .page-header__city-image {
     width: 100%;
     // width: 1200px;
+  }
+
+  .page-header__city-image--feedback {
+    height: 300px;
   }
 }

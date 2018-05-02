@@ -41,3 +41,20 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 106px;
+  }
+
+  .feedback__title {
+    padding-top: 112px;
+  }
+
+  .feedback__slogan {
+    padding: 0 260px;
+    padding-bottom: 20px;
+  }
+}
