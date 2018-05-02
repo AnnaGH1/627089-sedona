@@ -1,9 +1,15 @@
-.gallery {
-  padding-left: 20px;
-  padding-right: 20px;
+.gallery__wrapper {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .gallery__title {
+  margin: 0;
+  // padding-top: 40px;
+  padding-top: 36px;
+  padding-bottom: 12px;
+  text-align: center;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;

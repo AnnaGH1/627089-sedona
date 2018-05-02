@@ -1,0 +1,12 @@
+.recording__image {
+  display: block;
+  width: 320px;
+  height: 202px;
+}
+
+.recording__controls {
+  margin: 0 auto;
+  margin-top: $progress-container-h-m * (-1);
+  width: 280px;
+  // outline: 1px solid aqua;
+}

@@ -1,12 +1,31 @@
+.caption {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
 .caption__title {
+  margin: 0;
   font-weight: bold;
 }
 
+.caption__like-icon {
+  padding: 0;
+  border: none;
+  width: 22px;
+  height: 20px;
+  background-color: transparent;
+}
+
 .caption__author {
+  margin: 0;
+  padding-bottom: 6px;
   color: $font-grey;
   text-transform: none;
 }
 
 .caption__like-number {
+  display: inline-block;
+  margin: 0;
+  padding-left: 11px;
   font-weight: bold;
 }
