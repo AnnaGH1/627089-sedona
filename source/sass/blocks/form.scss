@@ -13,11 +13,14 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
     left: -20px;
     width: $mobile-width;
     height: 1px;
     background-color: $bg-grey-3;
+  }
+
+  &--name::before {
+    top: 0;
   }
 
   &--contact::before {
@@ -200,7 +203,6 @@
   background-color: $bg-input;
 }
 
-
 .form__input-checkbox:hover + .form__label-choice::before {
   background-color: $bg-grey-3;
 }
@@ -267,24 +269,130 @@
     flex-wrap: wrap;
   }
 
+  .form__section--name {
+    width: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: -2px;
+      width: 1px;
+      height: 293px;
+    }
+  }
+
+  .form__section--contact {
+    flex-direction: column;
+    width: 100%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 56px;
+      width: 127px;
+      height: 1px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .form__section--rating {
+    width: 50%;
+    order: -1;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .form__section--attractions {
+    width: 100%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 55px;
+      width: 127px;
+      height: 1px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  .form__section--experience {
+    width: 100%;
+    padding-bottom: 16px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      width: 127px;
+      height: 1px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
   .form__section {
+    &::before,
+    &::after {
+      background-color: $bg-grey-6;
+    }
+  }
+
+  .form__title {
+    position: relative;
+    font-size: $font-size-3;
+
     &--name {
-      width: 50%;
+      padding-top: 28px;
+      padding-bottom: 48px;
+      padding-left: 56px;
+      text-align: left;
     }
 
     &--contact {
-      flex-direction: column;
-      width: 100%;
+      padding-top: 46px;
+      padding-bottom: 14px;
     }
 
     &--rating {
-      width: 50%;
-      order: -1;
+      padding-bottom: 48px;
+      text-align: left;
     }
 
-    &--attractions,
+    &--attractions {
+      padding: 0 120px;
+      padding-top: 32px;
+      padding-bottom: 35px;
+    }
+
     &--experience {
-      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 58px;
     }
   }
 
@@ -295,6 +403,8 @@
     &--attractions {
       flex-direction: row;
       flex-wrap: wrap;
+      margin-left: 95px;
+      margin-right: 35px;
     }
   }
 
@@ -303,19 +413,35 @@
     display: flex;
     align-items: baseline;
 
+    &--name {
+      padding-left: 58px;
+    }
+
+    &--rating {
+      padding-left: 78px;
+      padding-bottom: 25px;
+    }
+
     &--attraction {
       width: 50%;
+      padding-bottom: 44px;
     }
   }
 
+  .form__label--email {
+    padding-top: 12px;
+  }
+
   .form__submit {
-    width: 40%;
+    width: 324px;
     margin-right: auto;
+    margin-bottom: 58px;
   }
 
   .form__note {
     display: block;
     margin-left: auto;
+    padding-top: 22px;
     color: $font-grey;
   }
 }

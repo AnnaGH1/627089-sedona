@@ -51,7 +51,7 @@
         <section class="feedback__content">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__section form__section--name">
-              <legend class="form__title">Представьтесь:</legend>
+              <legend class="form__title form__title--name">Представьтесь:</legend>
               <ul class="form__list form__list--name">
                 <li class="form__item form__item--name">
                   <label class="form__label" for="user-name-id">Имя<span class="form__mark-required">*</span>:</label>
@@ -71,11 +71,11 @@
               <legend class="form__title form__title--contact">Контактная информация:</legend>
               <ul class="form__list form__list--contact">
                 <li class="form__item form__item--contact form__item--phone">
-                  <label class="form__label form__label--contact" for="phone-id"><span class="form__label-addition">Контактный</span> телефон<span class="form__mark-required">*</span>:</label>
+                  <label class="form__label form__label--contact form__label--phone" for="phone-id"><span class="form__label-addition">Контактный</span> телефон<span class="form__mark-required">*</span>:</label>
                   <input class="form__input form__input--phone" type="tel" name="phone" id="phone-id" placeholder="Введите телефон" required>
                 </li>
                 <li class="form__item form__item--contact form__item--email">
-                  <label class="form__label form__label--contact" for="email-id">Электронная почта<span class="form__mark-required">*</span>:</label>
+                  <label class="form__label form__label--contact form__label--email" for="email-id">Электронная почта<span class="form__mark-required">*</span>:</label>
                   <input class="form__input form__input--email" type="email" name="email" id="email-id" placeholder="Введите e-mail" required>
                 </li>
               </ul>
@@ -123,7 +123,7 @@
               <textarea class="form__textarea" name="experience-description" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="form__submit btn" type="submit">Отправить отзыв</button>
-            <p class="form__note">* - обязательные поля</p>
+            <div class="form__note">* ‒ обязательные поля</div>
           </form>
         </section>
       </div>

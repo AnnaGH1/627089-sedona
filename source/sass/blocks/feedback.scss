@@ -22,7 +22,22 @@
 
 @media (min-width: $tablet-width) {
   .feedback__wrapper {
-    margin: 0 20px;
+    margin: 0 auto;
+    padding: 0 58px;
+    // width: $tablet-width;
     width: 100%;
+  }
+
+  .feedback__title {
+    padding-top: 77px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: $font-size-4;
+  }
+
+  .feedback__slogan {
+    padding: 0  107px;
+    padding-bottom: 33px;
+    text-align: center;
   }
 }
