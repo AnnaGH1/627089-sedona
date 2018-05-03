@@ -16,6 +16,10 @@
   background-color: transparent;
 }
 
+.caption__like-icon-image {
+  fill: $font-light-grey;
+}
+
 .caption__author {
   margin: 0;
   padding-bottom: 6px;
@@ -59,8 +63,24 @@
     align-items: center;
   }
 
-
   .caption__like-number {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .caption {
+    width: 100%;
+    background-color: $bg-grey-30;
+
+    &__title,
+    &__author,
+    &__like-number {
+      color: $font-white;
+    }
+
+    &__like-icon-image {
+      fill: $font-white;
+    }
   }
 }

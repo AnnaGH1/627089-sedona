@@ -1,5 +1,6 @@
 .gallery-photo {
   padding: 0 20px;
+  // outline: 1px solid red;
 }
 
 .gallery-photo__intro {
@@ -34,6 +35,8 @@
   padding: 0;
   padding-bottom: 22px;
   width: 280px;
+  // outline: 1px solid green;
+
 
   &::after {
     content: "";
@@ -69,7 +72,6 @@
   .gallery-photo__item {
     padding-bottom: 0;
     width: 50%;
-    outline: 1px solid green;
 
     &::after {
       display: none;
@@ -83,6 +85,12 @@
 
 
 @media (min-width: $desktop-width) {
+  .gallery-photo__intro {
+    padding-bottom: 16px;
+    padding-left: 382px;
+    padding-right: 372px;
+  }
+
   .gallery-photo__item {
     width: 33.33%;
 

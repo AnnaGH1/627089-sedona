@@ -67,38 +67,38 @@
       height: 288px;
     }
   }
-
-  // .page-header__city-image--feedback {
-  //   height: 288px;
-  // }
-  //
-  // .page-header__city-image--gallery {
-  //   height: 288px;
-  // }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     // width: $desktop-width;
     width: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   .page-header__logo {
     margin-left: -88px;
+    width: 187px;
+    height: 96px;
   }
 
   .page-header__logo-image {
-    width: 187px;
-    height: 96px;
+    width: 100%;
+    height: 100%;
+    // width: 187px;
+    // height: 96px;
   }
 
   .page-header__city-image {
     width: 100%;
     // width: 1200px;
-  }
 
-  .page-header__city-image--feedback {
-    height: 300px;
+    &--feedback {
+      height: 300px;
+    }
+
+    &--gallery {
+      height: 298px;
+    }
   }
 }

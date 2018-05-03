@@ -147,3 +147,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .controls {
+    width: 800px;
+  }
+
+  .controls__progress-container::before {
+    width: 540px;
+  }
+}

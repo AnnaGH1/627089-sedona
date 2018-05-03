@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   width: 320px;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 .gallery-video__title {
@@ -27,6 +27,7 @@
 
 .gallery-video__item {
   padding-bottom: 38px;
+  // outline: 1px solid green;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,5 +49,25 @@
 
   .gallery-video__item {
     padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-video {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  .gallery-video__title {
+    padding-top: 72px;
+  }
+
+  .gallery-video__intro {
+    padding-left: 185px;
+    padding-right: 185px;
+  }
+
+  .gallery-video__item {
+    padding-bottom: 82px;
   }
 }

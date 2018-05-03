@@ -19,3 +19,9 @@
     margin-top: $controls-h-td * (-1);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .recording__image {
+    width: 800px;
+  }
+}
