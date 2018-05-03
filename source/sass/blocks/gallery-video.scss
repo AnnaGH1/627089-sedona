@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   width: 320px;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 .gallery-video__title {
@@ -28,4 +28,15 @@
   padding-bottom: 38px;
   // margin-bottom: 38px;
   width: 320px;
+  outline: 1px solid green;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-video {
+    width: 648px;
+  }
+
+  .gallery-video__item {
+    width: 648px;
+  }
 }

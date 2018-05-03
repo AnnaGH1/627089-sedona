@@ -29,3 +29,38 @@
   padding-left: 11px;
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width) {
+  .caption {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 32px;
+    background-color: $bg-controls-2;
+
+    &--full {
+      padding-right: 20px;
+    }
+  }
+
+  .caption__about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caption__author {
+    padding-bottom: 0;
+  }
+
+  .caption__popularity {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .caption__like-number {
+    display: block;
+  }
+}

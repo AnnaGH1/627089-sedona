@@ -47,13 +47,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .gallery-photo {
+    padding: 0;
+  }
+
+  .gallery-photo__intro {
+    padding-left: 110px;
+    padding-right: 110px;
+
+    &::after {
+      display: none;
+    }
+  }
+
   .gallery-photo__list {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 54px;
   }
 
   .gallery-photo__item {
+    padding-bottom: 0;
     width: 50%;
+    outline: 1px solid green;
+
+    &::after {
+      display: none;
+    }
 
     &--full {
       width: 100%;

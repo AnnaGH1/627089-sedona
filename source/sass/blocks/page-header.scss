@@ -1,5 +1,5 @@
 .page-header {
-  // outline: 3px solid blue;
+  // outline: 1px solid blue;
 }
 
 .page-header__wrapper {
@@ -7,6 +7,7 @@
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
+  // outline: 1px solid blue;
 }
 
 .page-header__logo {
@@ -54,15 +55,27 @@
   }
 
   .page-header__city-image {
+    margin-top: 0;
     width: 100%;
     // width: 768px;
-    height: 518px;
-    margin-top: 0;
+
+    &--index {
+      height: 518px;
+    }
+
+    &--feedback,
+    &--gallery {
+      height: 288px;
+    }
   }
 
-  .page-header__city-image--feedback {
-    height: 288px;
-  }
+  // .page-header__city-image--feedback {
+  //   height: 288px;
+  // }
+  //
+  // .page-header__city-image--gallery {
+  //   height: 288px;
+  // }
 }
 
 @media (min-width: $desktop-width) {

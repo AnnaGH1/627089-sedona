@@ -84,3 +84,9 @@
     fill: $video-icon-m-3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .controls {
+    width: 648px;
+  }
+}

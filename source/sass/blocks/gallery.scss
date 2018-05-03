@@ -2,6 +2,7 @@
   box-sizing: border-box;
   width: $mobile-width;
   margin: 0 auto;
+  outline: 1px solid orange;
 }
 
 .gallery__title {
@@ -13,4 +14,17 @@
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    margin: 0 auto;
+    width: 648px;
+  }
+
+  .gallery__title {
+    padding-top: 77px;
+    padding-bottom: 16px;
+    font-size: $font-size-4;
+  }
 }
