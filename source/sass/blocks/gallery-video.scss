@@ -17,7 +17,8 @@
 
 .gallery-video__intro {
   margin: 0;
-  padding: 0 22px;
+  padding-left: 22px;
+  padding-right: 22px;
   padding-top: 16px;
   padding-bottom: 34px;
   color: $font-grey;
@@ -26,9 +27,6 @@
 
 .gallery-video__item {
   padding-bottom: 38px;
-  // margin-bottom: 38px;
-  width: 320px;
-  outline: 1px solid green;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,7 +34,19 @@
     width: 648px;
   }
 
+  .gallery-video__title {
+    padding-top: 68px;
+    padding-bottom: 14px;
+    font-size: $font-size-4;
+  }
+
+  .gallery-video__intro {
+    padding-left: 112px;
+    padding-right: 112px;
+    padding-bottom: 72px;
+  }
+
   .gallery-video__item {
-    width: 648px;
+    padding-bottom: 40px;
   }
 }

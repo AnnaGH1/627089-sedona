@@ -7,8 +7,6 @@
 .recording__controls {
   margin: 0 auto;
   margin-top: $progress-container-h-m * (-1);
-  // width: 280px;
-  outline: 1px solid aqua;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,6 +16,6 @@
   }
 
   .recording__controls {
-    // width: 648px;
+    margin-top: $controls-h-td * (-1);
   }
 }
