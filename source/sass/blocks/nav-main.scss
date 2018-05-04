@@ -1,10 +1,11 @@
 .nav-main {
   position: relative;
-  width: $mobile-width;
+  // width: $mobile-width;
 }
 
 .nav-main__site-list {
-  width: $mobile-width;
+  width: 100%;
+  // width: $mobile-width;
 }
 
 .nav-main__toggle {
@@ -28,6 +29,7 @@
   width: 23px;
   height: 22px;
   background-image: url("../../img/icon-menu.svg");
+  background-repeat: no-repeat;
 }
 
 .nav-main--opened .nav-main__toggle::before {
@@ -38,6 +40,7 @@
   width: 23px;
   height: 22px;
   background-image: url("../../img/icon-cross.svg");
+  background-repeat: no-repeat;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -62,15 +65,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .nav-main {
-    width: 100%;
-  }
-
   .nav-main__toggle {
     display: none;
-  }
-
-  .nav-main__site-list {
-    width: 100%;
   }
 }

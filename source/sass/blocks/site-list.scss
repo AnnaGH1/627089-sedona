@@ -49,6 +49,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    justify-content: space-between;
     background-color: $bg-white;
   }
 
@@ -66,7 +67,7 @@
 
   .site-list__link {
     color: $font-black;
-    padding: 10px 0;
+    padding: 8px 0;
   }
 
   .site-list__link--active {
@@ -80,7 +81,6 @@
       color: $font-brown-30;
     }
   }
-
 
   .site-list__link[href] {
     &:hover {
