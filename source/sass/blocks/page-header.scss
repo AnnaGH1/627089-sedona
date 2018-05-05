@@ -55,6 +55,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
+    position: relative;
     width: 100%;
   }
 
@@ -64,7 +65,7 @@
   }
 
   .page-header__logo {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     margin-left: -51px;
