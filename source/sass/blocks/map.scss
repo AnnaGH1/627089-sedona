@@ -1,64 +1,58 @@
 .map__wrapper {
-  display: flex;
-  width: $mobile-width;
+  position: relative;
   margin: 0 auto;
-  // outline: 1px solid magenta;
+  width: $mobile-width;
+  height: 350px;
+  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+  }
 }
 
-.map__state {
-  position: relative;
-  display: block;
-  width: 320px;
-  height: 350px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 27px;
-    top: 160px;
-    left: 145px;
-    // background-image: url("../../img/icon-map-marker.svg");
-    outline: 1px solid green;
-  }
+.map__marker {
+  position: absolute;
+  top: 160px;
+  left: 145px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
-    // width: $tablet-width;
-    width: 100%;
-    margin: 0 auto;
-    // outline: 1px solid green;
+    width: $tablet-width;
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+    }
   }
 
-  .map__state {
-    width: 100%;
-    // width: 768px;
-    height: 350px;
-
-    &::before {
-      top: 165px;
-      left: 370px;
-    }
+  .map__marker {
+    position: absolute;
+    top: 165px;
+    left: 370px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__wrapper {
-    // width: $desktop-width;
-    width: 100%;
-    margin: 0 auto;
-    // outline: 1px solid aqua;
+    width: $desktop-width;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+    }
   }
 
-  .map__state {
-    width: 100%;
-    // width: 1200px;
-    height: 350px;
-
-    &::before {
-      top: 162px;
-      left: 587px;
-    }
+  .map__marker {
+    position: absolute;
+    top: 162px;
+    left: 587px;
   }
 }

@@ -38,7 +38,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="../../img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="../../img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" src="../../img/logo-sedona-mobile.svg" width="" height="" alt="Герб города Седона">
+            <img class="page-header__logo-image" src="../../img/logo-sedona-mobile.svg" width="102" height="83" alt="Герб города Седона">
           </picture>
         </a>
         <div class="page-header__slogan-container page-header__slogan-container--index">
@@ -59,7 +59,11 @@
                 <p class="advantage__number advantage__number--full">- №1 -</p>
                 <p class="advantage__description advantage__description--full">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="advantage__photo advantage__photo--full" src="#" width="320" height="260" alt="Фото дома в Седоне">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../../img/main-city-desktop@1x.jpg, main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../../img/main-city-tablet@1x.jpg, main-city-tablet@2x.jpg 2x">
+                <img class="advantage__photo advantage__photo--full" src="../../img/main-city-mobile@1x.jpg" srcset="../../img/main-city-mobile@2x.jpg 2x" alt="Фото дома в Седоне">
+              </picture>
               <ul class="advantage__advice-list advice-list">
                 <li class="advice-list__advice-item subject subject--accomodation">
                   <h3 class="subject__title subject__title--accomodation">Жилье</h3>
@@ -81,7 +85,11 @@
                 <p class="advantage__number advantage__number--full">- № 2-</p>
                 <p class="advantage__description advantage__description--full advantage__description--second-feature">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantage__photo advantage__photo--full" src="#" width="320" height="260" alt="Фото моста Дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../../img/main-bridge-desktop@1x.jpg, main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../../img/main-bridge-tablet@1x.jpg, main-bridge-tablet@2x.jpg 2x">
+                <img class="advantage__photo advantage__photo--full" src="../../img/main-bridge-mobile@1x.jpg" srcset="../../img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
+              </picture>
             </li>
             <li class="features__item advantage advantage--regular">
               <div class="advantage__wrapper advantage__wrapper--regular">
@@ -116,7 +124,9 @@
       </section>
       <section class="map">
         <div class="map__wrapper">
-          <img class="map__state" src="#" width="320" height="350" alt="Карта штата Аризона">
+          <div class="map__marker">
+            <span class="visually-hidden">Расположение Седоны на карте</span>
+          </div>
         </div>
       </section>
     </main>
