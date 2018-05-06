@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: $mobile-width;
   margin: 0 auto;
   padding-top: 38px;
-  // outline: 1px solid magenta;
+  width: $mobile-width;
+  // outline: 1px solid blue;
 }
 
 .page-footer__slogan {
@@ -25,9 +25,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    // width: $tablet-width;
-    width: 100%;
     margin: 0 auto;
+    max-width: $tablet-width;
+    width: 100%;
   }
 
   .page-footer__slogan {
@@ -45,10 +45,8 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    // width: $desktop-width;
+    max-width: $desktop-width;
     width: 100%;
-    // margin: 0 auto;
-    // outline: 1px solid aqua;
   }
 
   .page-footer__slogan {
