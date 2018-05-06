@@ -57,7 +57,11 @@
             <li class="gallery-photo__item gallery-photo__item--full">
               <figure class="post">
                 <a class="post__link post__link--full" href="#">
-                  <img class="post__image post__image--full" src="http://placehold.it/150x100" width="150" height="100" alt="Вид на горы в Седоне">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="../../img/photo-sunset-desktop@1x.jpg, photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/photo-sunset-tablet@1x.jpg, photo-sunset-tablet@2x.jpg 2x">
+                    <img class="post__image post__image--full" src="../../img/photo-sunset-mobile@1x.jpg" srcset="../../img/photo-sunset-mobile@2x.jpg 2x" alt="Закат в Седоне">
+                  </picture>
                 </a>
                 <figcaption class="post__caption caption caption--full">
                   <div class="caption__about">
@@ -85,7 +89,11 @@
             <li class="gallery-photo__item">
               <figure class="post">
                 <a class="post__link" href="#">
-                  <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Местный кактус">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="../../img/photo-cactus-desktop@1x.jpg, photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/photo-cactus-tablet@1x.jpg, photo-cactus-tablet@2x.jpg 2x">
+                    <img class="post__image" src="../../img/photo-cactus-mobile@1x.jpg" srcset="../../img/photo-cactus-mobile@2x.jpg 2x" alt="Местный кактус">
+                  </picture>
                 </a>
                 <figcaption class="post__caption caption">
                   <div class="caption__about">
@@ -113,7 +121,11 @@
             <li class="gallery-photo__item">
               <figure class="post">
                 <a class="post__link" href="#">
-                  <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Дорога в горах">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="../../img/photo-roads-desktop@1x.jpg, photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/photo-roads-tablet@1x.jpg, photo-roads-tablet@2x.jpg 2x">
+                    <img class="post__image" src="../../img/photo-roads-mobile@1x.jpg" srcset="../../img/photo-roads-mobile@2x.jpg 2x" alt="Дорога в горах">
+                  </picture>
                 </a>
                 <figcaption class="post__caption caption">
                   <div class="caption__about">
@@ -141,7 +153,11 @@
             <li class="gallery-photo__item">
               <figure class="post">
                 <a class="post__link" href="#">
-                  <img class="post__image" src="http://placehold.it/150x100" width="150" height="100" alt="Фото Моста Дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="../../img/photo-bridge-desktop@1x.jpg, photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="../../img/photo-bridge-tablet@1x.jpg, photo-bridge-tablet@2x.jpg 2x">
+                    <img class="post__image" src="../../img/photo-bridge-mobile@1x.jpg" srcset="../../img/photo-bridge-mobile@2x.jpg 2x" alt="Фото Моста Дьявола">
+                  </picture>
                 </a>
                 <figcaption class="post__caption caption">
                   <div class="caption__about">
@@ -174,7 +190,11 @@
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
           <div class="gallery-video__item recording">
-            <img class="recording__image" src="http://placehold.it/150x100" width="320" height="202" alt="Видео путешествия в Седону">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../../img/video-desktop@1x.jpg, video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="../../img/video-tablet@1x.jpg, video-tablet@2x.jpg 2x">
+              <img class="recording__image" src="../../img/video-mobile@1x.jpg" srcset="../../img/video-mobile@2x.jpg 2x" alt="Видео путешествия в Седону">
+            </picture>
             <div class="recording__controls controls">
               <div class="controls__progress-container">
                 <div class="controls__scale"></div>
@@ -225,7 +245,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                Twitter
+                <span class="visually-hidden">Twitter</span>
                 <svg class="social__icon social__icon--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                   <g id="W6EeEF_1_">
                     <g>
@@ -237,7 +257,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                facebook
+                <span class="visually-hidden">facebook</span>
                 <svg class="social__icon social__icon--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
                   <path fill="#ffffff" d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
                 </svg>
@@ -245,7 +265,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
-                YouTube
+                <span class="visually-hidden">YouTube</span>
                 <svg class="social__icon social__icon--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
                   <path fill="#ffffff" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
                 </svg>
