@@ -24,8 +24,8 @@
   .feedback__wrapper {
     margin: 0 auto;
     padding: 0 58px;
-    // width: $tablet-width;
     width: 100%;
+    max-width: $tablet-width;
   }
 
   .feedback__title {
@@ -38,6 +38,7 @@
   .feedback__slogan {
     padding: 0  107px;
     padding-bottom: 33px;
+    margin-bottom: 28px;
     text-align: center;
   }
 }
@@ -45,12 +46,14 @@
 @media (min-width: $desktop-width) {
   .feedback__wrapper {
     width: 100%;
+    max-width: $desktop-width;
     padding-left: 120px;
     padding-right: 106px;
   }
 
   .feedback__title {
     padding-top: 112px;
+    padding-right: 17px;
   }
 
   .feedback__slogan {
