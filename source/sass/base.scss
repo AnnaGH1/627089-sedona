@@ -30,8 +30,12 @@ body {
   overflow: hidden;
 }
 
+picture,
+source {
+  display: block;
+}
+
 img {
   // max-width: 100%;
   // height: auto;
-  // outline: 1px solid magenta;
 }
