@@ -1,62 +1,73 @@
 .controls {
   width: 280px;
-  // outline: 1px solid aqua;
+  // outline: 1px solid orange;
 }
 
-.controls__progress-container {
-  position: relative;
-  box-sizing: border-box;
-  padding: 0 23px;
-  height: $progress-container-h-m;
-  background-color: $bg-controls-1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    width: 234px;
-    height: 3px;
-    background-color: $bg-white-20;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translateY(-4px);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: $bg-white;
-  }
-}
-
-.controls__actions-container {
-  box-sizing: border-box;
-  padding: 8px;
-  height: $actions-container-h-m;
-  background-color: $bg-controls-2;
-}
-
-.controls__actions-list {
+.controls__list {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: $bg-gallery-light;
 }
 
-.controls__action-item--subtitles {
-  margin-left: auto;
+.controls__item {
+  display: flex;
+  align-items: center;
+  height: 66px;
+  // outline: 2px dotted yellow;
+
+  &--progress {
+    display: flex;
+    width: 100%;
+    height: $progress-container-h-m;
+    background-color: $bg-gallery-dark;
+    opacity: 0.9;
+  }
+
+  &--subtitles {
+    margin-left: auto;
+    height: 66px;
+  }
+}
+
+.controls__container {
+  width: 234px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  // outline: 2px dotted red;
+}
+
+.controls__scale {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $bg-white-20;
+}
+
+.controls__indicator {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-4px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $bg-white;
 }
 
 .controls__icon {
-  margin: 15px;
+  display: block;
+  margin-left: 19px;
+  margin-right: 19px;
   padding: 0;
   border: none;
   background-color: transparent;
+
 
   &--replay {
     width: 16px;
@@ -75,6 +86,7 @@
 }
 
 .controls__icon-image {
+  display: block;
   fill: $video-icon-m-1;
 
   &:hover {
@@ -88,51 +100,53 @@
 
 @media (min-width: $tablet-width) {
   .controls {
-    width: 648px;
+    width: 100%;
     height: $controls-h-td;
   }
 
-  .controls__progress-container {
+  .controls__list {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: $bg-gallery-dark;
+    opacity: 0.9;
+  }
+
+  .controls__item {
+    display: flex;
+    align-items: center;
     height: $controls-h-td;
 
-    &::before {
-      left: 93px;
-      width: 389px;
+    &--progress {
+      padding: 0;
+      width: auto;
+      background-color: transparent;
     }
-
-    &::after {
-      left: 205px;
-    }
-  }
-
-  .controls__actions-container {
-    padding: 0;
-    // position: relative;
-    height: 0;
-  }
-
-  .controls__actions-list {
-    display: block;
-    position: relative;
-  }
-
-  .controls__action-item {
-    position: absolute;
 
     &--replay {
-      top: -72px;
-      left: 20px;
+      order: -1;
     }
 
     &--subtitles {
-      top: -72px;
-      right: 78px;
+      margin-left: 0;
     }
+  }
 
-    &--fullscreen {
-      top: -72px;
-      right: 27px;
-    }
+  .controls__container {
+    margin: 0;
+    width: 389px;
+  }
+
+  .controls__scale {
+    width: 100%;
+  }
+
+  .controls__indicator {
+    left: 30%;
+  }
+
+  .controls__icon {
+    margin-left: 23px;
+    margin-right: 23px;
   }
 
   .controls__icon-image {
@@ -153,7 +167,11 @@
     width: 800px;
   }
 
-  .controls__progress-container::before {
+  .controls__container {
     width: 540px;
+  }
+
+  .controls__indicator {
+    left: 23%;
   }
 }
