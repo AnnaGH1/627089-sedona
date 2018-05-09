@@ -23,7 +23,7 @@
   margin-top: -36px;
   width: 100%;
   background-color: $bg-fallback;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 768px auto;
   // outline: 1px solid magenta;
@@ -35,7 +35,7 @@
     bottom: 0;
     width: 100%;
     height: 27px;
-    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -54,7 +54,7 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -97,7 +97,7 @@
     margin: 0 auto;
     margin-top: 0;
     max-width: $tablet-width;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     // background-size: 768px auto;
 
     &--index {
@@ -115,7 +115,7 @@
       // width: 100%;
       max-width: 768px;
       height: 57px;
-      background-image: url("../../img/bg-intro-triangle-tablet.svg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
       background-size: auto;
     }
 
@@ -159,7 +159,7 @@
 
   .page-header__slogan-container {
     max-width: 1200px;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 1200px auto;
 
     &--index {
@@ -177,11 +177,11 @@
     &::before {
       max-width: 1200px;
       height: 57px;
-      background-image: url("../../img/bg-intro-triangle-desktop.svg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
