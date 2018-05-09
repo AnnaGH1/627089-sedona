@@ -89,6 +89,7 @@
   .advantage__text {
     width: 100%;
     max-width: 256px;
+    height: 100%;
     padding-top: 35px;
     padding-bottom: 30px;
 
@@ -162,8 +163,6 @@
     padding-bottom: 10px;
 
     &--promo {
-      padding-left: 94px;
-      padding-right: 100px;
       padding-top: 15px;
       padding-bottom: 10px;
     }
