@@ -1,6 +1,6 @@
 .gallery-photo {
-  padding: 0 20px;
-  outline: 1px solid red;
+  margin: 0 20px;
+  // outline: 1px solid green;
 }
 
 .gallery-photo__intro {
@@ -18,6 +18,7 @@
     width: 320px;
     height: 1px;
     background-color: $bg-grey-3;
+    // outline: 1px solid aqua;
   }
 }
 
@@ -35,8 +36,7 @@
   padding: 0;
   padding-bottom: 22px;
   width: 280px;
-  // outline: 1px solid green;
-
+  // outline: 1px solid red;
 
   &::after {
     content: "";
@@ -46,14 +46,15 @@
     width: 320px;
     height: 1px;
     background-color: $bg-grey-3;
+    // outline: 1px solid aqua;
   }
 }
 
 @media (min-width: $tablet-width) {
   .gallery-photo {
+    margin: 0 60px;
     padding: 0;
-    margin: 0 auto;
-    width: 648px;
+    // width: 648px;
   }
 
   .gallery-photo__intro {
@@ -85,8 +86,11 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
+  .gallery-photo {
+    margin: 0;
+  }
+
   .gallery-photo__intro {
     padding-bottom: 16px;
     padding-left: 382px;

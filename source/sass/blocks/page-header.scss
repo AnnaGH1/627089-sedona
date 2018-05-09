@@ -127,11 +127,11 @@
   .page-header__slogan {
     margin-top: 75px;
     width: 460px;
-    height: 350px;
+    height: auto;
 
     &--feedback,
     &--gallery {
-      margin-top: -42px;
+      margin-top: 94px;
     }
   }
 }
@@ -171,7 +171,7 @@
     }
 
     &--gallery {
-      height: 298px;
+      height: 300px;
     }
 
     &::before {
@@ -190,8 +190,9 @@
       margin-top: 79px;
     }
 
-    &--feedback {
-      margin-top: -35px;
+    &--feedback,
+    &--gallery {
+      margin-top: 102px;
     }
   }
 }
