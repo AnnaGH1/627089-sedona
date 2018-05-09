@@ -112,11 +112,11 @@
   }
 
   &--phone::before {
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
   }
 
   &--email::before {
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 
   &--rating {
@@ -220,14 +220,14 @@
 
 .form__input-checkbox:checked + .form__label-choice::before,
 .form__input-checkbox:checked:hover + .form__label-choice::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   // outline: 1px solid magenta;
 }
 
 .form__input-checkbox:checked:active + .form__label-choice::before {
-  background-image: url("../../img/icon-tick-active.svg");
+  background-image: url("../img/icon-tick-active.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -343,21 +343,19 @@
     }
 
     &--contact {
-      // padding-left: 186px;
-      // padding-right: 10px;
       &::before,
       &::after {
         top: 50%;
-        }
-
-        &::before {
-          left: -184px;
-        }
-
-        &::after {
-          left: 336px;
-        }
       }
+
+      &::before {
+        left: -184px;
+      }
+
+      &::after {
+        left: 336px;
+      }
+    }
 
     &--rating {
       margin-bottom: 34px;
@@ -494,6 +492,7 @@
     &::after {
       width: 280px;
     }
+
     &--name {
       margin-bottom: 27px;
 
@@ -538,7 +537,6 @@
       &::after {
         left: 321px;
       }
-
     }
   }
 
@@ -561,6 +559,7 @@
     &--name {
       padding-left: 50px;
     }
+
     &--contact {
       display: flex;
       flex-direction: row;
