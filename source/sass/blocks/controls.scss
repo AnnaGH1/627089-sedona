@@ -23,7 +23,6 @@
     width: 100%;
     height: $progress-container-h-m;
     background-color: $bg-gallery-dark;
-    opacity: 0.9;
   }
 
   &--subtitles {
@@ -105,10 +104,10 @@
   }
 
   .controls__list {
+    position: relative;
     flex-wrap: nowrap;
     justify-content: space-around;
     background-color: $bg-gallery-dark;
-    opacity: 0.9;
   }
 
   .controls__item {
