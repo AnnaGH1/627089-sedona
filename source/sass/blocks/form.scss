@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   padding-bottom: 10px;
+  outline: 1px solid magenta;
+
+  &--name {
+    // width: auto;
+  }
 
   &--attractions {
     padding-bottom: 6px;
@@ -90,33 +95,12 @@
   padding-bottom: 10px;
 
   &--name {
-    // overflow: hidden;
+    // flex-direction: column;
   }
 
   &--contact {
-    position: relative;
     flex-direction: column;
     padding-bottom: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 58px;
-      height: 58px;
-      background-color: $bg-grey-5;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
-  }
-
-  &--phone::before {
-    background-image: url("../img/icon-phone.svg");
-  }
-
-  &--email::before {
-    background-image: url("../img/icon-mail.svg");
   }
 
   &--rating {
@@ -136,6 +120,8 @@
   padding-right: 15px;
   line-height: $line-height-1;
   color: $font-grey;
+  // outline: 1px solid green;
+
 
   &--contact {
     padding-bottom: 7px;
@@ -154,9 +140,43 @@
   text-transform: none;
 }
 
+.form__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  // box-sizing: border-box;
+  // outline: 1px solid green;
+
+  &--name {
+    width: auto;
+  }
+  &--phone,
+  &--email {
+    &::after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-color: $bg-grey-5;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      // outline: 1px solid aqua;
+    }
+  }
+
+  &--phone::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email::after {
+    background-image: url("../img/icon-mail.svg");
+  }
+
+}
+
 .form__input {
   box-sizing: border-box;
-  width: 100%;
+  flex-grow: 1;
   padding: 17px;
   padding-left: 22px;
   font-size: $font-size-1;
@@ -164,7 +184,6 @@
   font-weight: bold;
   border-width: 0;
   background-color: $bg-input;
-  // outline: 1px solid blue;
 }
 
 .form__input-radio + .form__label-choice::before {
@@ -251,6 +270,7 @@
   font-weight: bold;
   border-width: 0;
   background-color: $bg-input;
+  resize: none;
 }
 
 .form__textarea::placeholder {
