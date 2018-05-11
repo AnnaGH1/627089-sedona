@@ -1,4 +1,9 @@
 .modal-success {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -160px;
   box-sizing: border-box;
   width: 320px;
   padding-top: 40px;
@@ -10,15 +15,6 @@
 .modal-success--closed {
   display: none;
 }
-
-.modal-success--opened {
-  display: block;
-  position: fixed;
-  top: 30%;
-  left: 50%;
-  margin-left: -160px;
-}
-
 
 .modal-success__title {
   margin: 0;
@@ -46,11 +42,8 @@
 
 @media (min-width: $tablet-width) {
   .modal-success {
-    width: 640px;
-  }
-
-  .modal-success--open {
     margin-left: -320px;
+    width: 640px;
   }
 
   .modal-success__text {

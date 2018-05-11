@@ -1,4 +1,9 @@
 .modal-failure {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -160px;
   box-sizing: border-box;
   width: 320px;
   padding-top: 40px;
@@ -10,14 +15,6 @@
 
 .modal-failure--closed {
   display: none;
-}
-
-.modal-failure--opened {
-  display: block;
-  position: fixed;
-  top: 30%;
-  left: 50%;
-  margin-left: -160px;
 }
 
 .modal-failure__title {
@@ -39,11 +36,8 @@
 
 @media (min-width: $tablet-width) {
   .modal-failure {
-    width: 400px;
-  }
-
-  .modal-failure--open {
     margin-left: -200px;
+    width: 400px;
   }
 
   .modal-failure__title {
