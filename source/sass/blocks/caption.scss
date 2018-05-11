@@ -1,12 +1,86 @@
+.caption {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
 .caption__title {
+  margin: 0;
   font-weight: bold;
 }
 
+.caption__like-icon {
+  padding: 0;
+  border: none;
+  width: 22px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.caption__like-icon-image {
+  fill: $font-light-grey;
+}
+
 .caption__author {
+  margin: 0;
+  padding-bottom: 6px;
   color: $font-grey;
   text-transform: none;
 }
 
 .caption__like-number {
+  display: inline-block;
+  margin: 0;
+  padding-left: 11px;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .caption {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 32px;
+    background-color: $bg-gallery-light;
+
+    &--full {
+      padding-right: 20px;
+    }
+  }
+
+  .caption__about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .caption__author {
+    padding-bottom: 0;
+  }
+
+  .caption__popularity {
+    display: flex;
+    align-items: center;
+  }
+
+  .caption__like-number {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .caption {
+    width: 100%;
+    background-color: $bg-grey-30;
+
+    &__title,
+    &__author,
+    &__like-number {
+      color: $font-white;
+    }
+
+    &__like-icon-image {
+      fill: $font-white;
+    }
+  }
 }

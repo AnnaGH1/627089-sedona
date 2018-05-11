@@ -1,0 +1,52 @@
+.modal-failure {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -160px;
+  box-sizing: border-box;
+  width: 320px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: $bg-white;
+  outline: 2px solid $bg-grey-5;
+}
+
+.modal-failure--closed {
+  display: none;
+}
+
+.modal-failure__title {
+  margin: 0;
+}
+
+.modal-failure__text {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.modal-failure__close {
+  margin: 0 auto;
+  min-width: 180px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failure {
+    margin-left: -200px;
+    width: 400px;
+  }
+
+  .modal-failure__title {
+    line-height: $line-height-3;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .modal-failure__close {
+    width: 272px;
+  }
+}

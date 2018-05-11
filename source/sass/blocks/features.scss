@@ -2,38 +2,67 @@
   width: $mobile-width;
   margin: 0 auto;
   text-align: center;
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
 }
 
 .features__title {
   margin: 0;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 27px;
+  padding-right: 27px;
   padding-top: 40px;
-  padding-bottom: 5px;
+  padding-bottom: 18px;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
 }
 
 .features__intro {
+  display: block;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 29px;
   padding: 10px 20px;
   line-height: $line-height-1;
   color: $font-grey;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 37px;
+  }
+
+  &::before {
+    bottom: -29px;
+    left: 0;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    z-index: 1;
+    // outline: 1px solid aqua;
+  }
+
+  &::after {
+    bottom: -29px;
+    left: 0;
+    background-color: $bg-blue-1;
+    // outline: 1px solid blue;
+  }
 }
 
 .features__list {
   margin: 0;
   padding-left: 0;
   list-style: none;
+  // outline: 1px solid orange;
 }
 
 @media (min-width: $tablet-width) {
   .features__wrapper {
-    // width: $tablet-width;
+    max-width: $tablet-width;
     width: 100%;
-    margin: 0 auto;
-    // outline: 1px solid green;
   }
 
   .features__title {
@@ -45,21 +74,39 @@
 
   .features__intro {
     margin-top: 15px;
-    margin-bottom: 42px;
+    margin-bottom: 38px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .features__list {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .features__item {
+    width: 33.33%;
+    max-width: 256px;
+
+    &--full {
+      width: 100%;
+      max-width: 768px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__wrapper {
-    // width: $desktop-width;
+    max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
-    // outline: 1px solid aqua;
   }
 
   .features__title {
@@ -69,6 +116,14 @@
   }
 
   .features__intro {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+  }
+
+  .features__item {
+    max-width: 400px;
+
+    &--full {
+      max-width: 1200px;
+    }
   }
 }

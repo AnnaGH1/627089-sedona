@@ -1,10 +1,40 @@
-.gallery {
-  padding-left: 20px;
-  padding-right: 20px;
+.gallery__wrapper {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+  // outline: 1px solid blue;
 }
 
 .gallery__title {
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 12px;
+  text-align: center;
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    width: 100%;
+    max-width: $tablet-width;
+  }
+
+  .gallery__title {
+    padding-top: 77px;
+    padding-bottom: 16px;
+    font-size: $font-size-4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: 100%;
+    max-width: $desktop-width;
+  }
+
+  .gallery__title {
+    padding-top: 114px;
+  }
 }

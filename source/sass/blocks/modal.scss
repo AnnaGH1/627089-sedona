@@ -1,0 +1,17 @@
+.modal__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .modal__title {
+    font-size: $font-size-4;
+  }
+}

@@ -1,0 +1,31 @@
+.recording__image {
+  display: block;
+  width: 320px;
+  height: 202px;
+  // z-index: 0;
+}
+
+.recording__controls {
+  margin: 0 auto;
+  margin-top: $progress-container-h-m * (-1);
+  // margin-top: -15px;
+  // z-index: 10;
+}
+
+@media (min-width: $tablet-width) {
+  .recording__image {
+    width: 648px;
+    height: 499px;
+  }
+
+  .recording__controls {
+    margin-top: $controls-h-td * (-1);
+    // margin-top: -10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recording__image {
+    width: 800px;
+  }
+}

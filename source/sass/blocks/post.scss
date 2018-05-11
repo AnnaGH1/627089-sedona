@@ -1,3 +1,49 @@
 .post {
   margin: 0;
 }
+
+.post__link {
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.post__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .post__link {
+    width: 324px;
+    height: 267px;
+
+    &--full {
+      width: 648px;
+      height: 400px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post {
+    position: relative;
+    width: 100%;
+  }
+
+  .post__link {
+    width: 100%;
+  }
+
+  .post__caption {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+  }
+}

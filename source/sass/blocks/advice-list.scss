@@ -15,12 +15,14 @@
 
 @media (min-width: $tablet-width) {
   .advice-list {
-    padding-top: 25px;
+    display: flex;
+    padding-top: 21px;
     padding-bottom: 45px;
   }
 
   .advice-list__advice-item {
     width: 33.33%;
+    max-width: 256px;
     text-align: center;
     padding-left: 20px;
     padding-top: 40px;
@@ -34,6 +36,11 @@
 
 @media (min-width: $desktop-width) {
   .advice-list {
-    padding-bottom: 70px;
+    padding-top: 25px;
+    padding-bottom: 67px;
+  }
+
+  .advice-list__advice-item {
+    max-width: 400px;
   }
 }

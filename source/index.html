@@ -3,59 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.min.js"></script>
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="page-header__nav-main nav-main nav-main--opened">
+        <nav class="page-header__nav-main nav-main nav-main--closed nav-main--nojs">
           <button class="nav-main__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="nav-main__wrapper">
-            <ul class="nav-main__site-list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link site-list__link--active">
-                Главная
-                </a>
-              </li>
-              <li class="site-list__item site-list__item--center-left">
-                <a class="site-list__link" href="photo.html">
-                Фото и видео
-                </a>
-              </li>
-              <li class="site-list__item site-list__item--center-right">
-                <a class="site-list__link" href="form.html">
-                Форма отзыва
-                </a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                HTML Academy
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="nav-main__site-list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link site-list__link--active">
+              Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--center-left">
+              <a class="site-list__link" href="photo.html">
+              Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--center-right">
+              <a class="site-list__link" href="form.html">
+              Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+              </a>
+            </li>
+          </ul>
         </nav>
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="#" width="102" height="83" alt="Герб города Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Герб города Седона">
+          </picture>
         </a>
-        <img class="page-header__city-image" src="#" width="320" height="389" alt="Город Седона">
+        <div class="page-header__slogan-container page-header__slogan-container--index">
+          <img class="page-header__slogan page-header__slogan--index" src="img/text-sedona-index.svg" width="280" height="213" alt="Город Седона">
+        </div>
       </div>
     </header>
     <main class="page-main index">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section class="features">
         <div class="features__wrapper">
-          <h2 class="features__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="features__title">Седона ‒ небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="features__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <ul class="features__list">
-            <li class="features__item advantage advantage--full">
-              <div class="advantage__wrapper advantage__wrapper--full advantage__wrapper--top-feature">
-                <h3 class="advantage__title advantage__title--full">Настоящий городок</h3>
-                <p class="advantage__number advantage__number--full">- №1 -</p>
-                <p class="advantage__description advantage__description--full">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <li class="features__item features__item--full advantage">
+              <div class="advantage__wrapper">
+                <div class="advantage__text advantage__text--promo">
+                  <h3 class="advantage__title advantage__title--promo">Настоящий городок</h3>
+                  <p class="advantage__number advantage__number--promo">- №1 -</p>
+                  <p class="advantage__description advantage__description--promo">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <div class="advantage__photo-container">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, main-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, main-city-tablet@2x.jpg 2x">
+                    <img class="advantage__photo" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото дома в Седоне">
+                  </picture>
+                </div>
               </div>
-              <img class="advantage__photo advantage__photo--full" src="#" width="320" height="260" alt="Фото дома в Седоне">
               <ul class="advantage__advice-list advice-list">
                 <li class="advice-list__advice-item subject subject--accomodation">
                   <h3 class="subject__title subject__title--accomodation">Жилье</h3>
@@ -71,33 +84,41 @@
                 </li>
               </ul>
             </li>
-            <li class="features__item advantage advantage--full advantage--full-reverse">
-              <div class="advantage__wrapper advantage__wrapper--full advantage__wrapper--second-feature">
-                <h3 class="advantage__title advantage__title--full advantage__title--second-feature">Там есть мост Дьявола</h3>
-                <p class="advantage__number advantage__number--full">- № 2-</p>
-                <p class="advantage__description advantage__description--full advantage__description--second-feature">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              </div>
-              <img class="advantage__photo advantage__photo--full" src="#" width="320" height="260" alt="Фото моста Дьявола">
-            </li>
-            <li class="features__item advantage advantage--regular">
-              <div class="advantage__wrapper advantage__wrapper--regular">
-                <h3 class="advantage__title advantage__title--regular">Небольшая площадь</h3>
-                <p class="advantage__number advantage__number--regular">- № 3-</p>
-                <p class="advantage__description advantage__description--regular">Все интересные места находятся очень близко</p>
-              </div>
-            </li>
-            <li class="features__item advantage advantage--regular">
-              <div class="advantage__wrapper advantage__wrapper--regular">
-                <h3 class="advantage__title advantage__title--regular">Красивая дорога</h3>
-                <p class="advantage__number advantage__number--regular">- № 4-</p>
-                <p class="advantage__description advantage__description--regular">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+            <li class="features__item features__item--full advantage">
+              <div class="advantage__wrapper advantage__wrapper--reverse">
+                <div class="advantage__text advantage__text--promo">
+                  <h3 class="advantage__title advantage__title--promo">Там есть мост&nbsp;Дьявола</h3>
+                  <p class="advantage__number advantage__number--promo">- № 2-</p>
+                  <p class="advantage__description advantage__description--promo">Да, по нему можно пройти! <br>Если вы осмелитесь, конечно</p>
+                </div>
+                <div class="advantage__photo-container">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, main-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, main-bridge-tablet@2x.jpg 2x">
+                    <img class="advantage__photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
+                  </picture>
+                </div>
               </div>
             </li>
-            <li class="features__item advantage advantage--regular">
-              <div class="advantage__wrapper advantage__wrapper--regular">
-                <h3 class="advantage__title advantage__title--regular">Мало туристов</h3>
-                <p class="advantage__number advantage__number--regular">- № 5-</p>
-                <p class="advantage__description advantage__description--regular">Большинство едет в Гранд Каньон и толпится там</p>
+            <li class="features__item advantage">
+              <div class="advantage__text">
+                <h3 class="advantage__title">Небольшая площадь</h3>
+                <p class="advantage__number">- № 3-</p>
+                <p class="advantage__description">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="features__item advantage">
+              <div class="advantage__text">
+                <h3 class="advantage__title">Красивая дорога</h3>
+                <p class="advantage__number">- № 4-</p>
+                <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+              </div>
+            </li>
+            <li class="features__item advantage">
+              <div class="advantage__text">
+                <h3 class="advantage__title">Мало туристов</h3>
+                <p class="advantage__number">- № 5-</p>
+                <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
           </ul>
@@ -112,7 +133,10 @@
       </section>
       <section class="map">
         <div class="map__wrapper">
-          <img class="map__state" src="#" width="320" height="350" alt="Карта штата Аризона">
+          <iframe class="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2066333.1112129402!2d-113.33731785312769!3d34.75427990388285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336!5e0!3m2!1sen!2sus!4v1525800251030" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="map__marker">
+            <span class="visually-hidden">Расположение Седоны на карте</span>
+          </div>
         </div>
       </section>
     </main>
@@ -123,7 +147,7 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                Twitter
+                <span class="visually-hidden">Twitter</span>
                 <svg class="social__icon social__icon--twitter" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                   <g id="W6EeEF_1_">
                     <g>
@@ -135,7 +159,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                facebook
+                <span class="visually-hidden">facebook</span>
                 <svg class="social__icon social__icon--facebook" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
                   <path fill="#ffffff" d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
                 </svg>
@@ -143,7 +167,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
-                YouTube
+                <span class="visually-hidden">YouTube</span>
                 <svg class="social__icon social__icon--youtube" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
                   <path fill="#ffffff" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
                 </svg>
@@ -162,5 +186,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/nav-toggle.js">
+    </script>
   </body>
 </html>

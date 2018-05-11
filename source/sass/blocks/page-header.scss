@@ -3,33 +3,82 @@
   flex-direction: column;
   width: $mobile-width;
   margin: 0 auto;
+  // outline: 1px solid blue;
+}
+
+.page-header__nav-main {
+  width: 100%;
+  // outline: 1px dotted green;
 }
 
 .page-header__logo {
   display: block;
   margin: 0 auto;
   width: 102px;
-  height: 83px;
+  z-index: 2;
 }
 
-.page-header__logo-image {
-  display: block;
+.page-header__slogan-container {
+  position: relative;
+  margin-top: -36px;
+  width: 100%;
+  background-color: $bg-fallback;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 768px auto;
+  // outline: 1px solid magenta;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 27px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    // outline: 1px solid aqua;
+  }
+
+  &--index {
+    height: 389px;
+    background-position: center center;
+  }
+
+  &--feedback,
+  &--gallery {
+    height: 158px;
+    background-position: center bottom;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
-.page-header__city-image {
+.page-header__slogan {
   display: block;
   margin: 0 auto;
-  margin-top: -27px;
-  width: 320px;
-  height: 389px;
+  margin-top: 90px;
+
+  &--feedback,
+  &--gallery {
+    margin-top: 52px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     position: relative;
-    // width: $tablet-width;
+    max-width: $tablet-width;
     width: 100%;
+  }
+
+  .page-header__nav-main {
     margin: 0 auto;
+    max-width: $tablet-width;
   }
 
   .page-header__logo {
@@ -39,23 +88,111 @@
     margin-left: -51px;
   }
 
-  .page-header__city-image {
-    width: 100%;
-    // width: 768px;
-    height: 518px;
+  .page-header__logo-image {
+    width: 102px;
+    height: 83px;
+  }
+
+  .page-header__slogan-container {
+    margin: 0 auto;
     margin-top: 0;
+    max-width: $tablet-width;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    // background-size: 768px auto;
+
+    &--index {
+      height: 518px;
+      background-position: bottom, cover;
+    }
+
+    &--feedback,
+    &--gallery {
+      height: 288px;
+      background-position: bottom, center;
+    }
+
+    &::before {
+      // width: 100%;
+      max-width: 768px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-size: auto;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-intro-triangle-tablet.svg"), url("../../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-header__slogan {
+    margin-top: 75px;
+    width: 460px;
+    height: auto;
+
+    &--feedback,
+    &--gallery {
+      margin-top: 94px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
-    // width: $desktop-width;
+    max-width: $desktop-width;
     width: 100%;
-    margin: 0 auto;
   }
 
-  .page-header__city-image {
-    width: 100%;
-    // width: 1200px;
+  .page-header__nav-main {
+    max-width: 1200px;
+  }
+
+  .page-header__logo {
+    margin-left: -94px;
+    width: 188px;
+  }
+
+  .page-header__logo-image {
+    width: 188px;
+    height: 97px;
+  }
+
+
+  .page-header__slogan-container {
+    max-width: 1200px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px auto;
+
+    &--index {
+      // height: 518px;
+    }
+
+    &--feedback {
+      height: 300px;
+    }
+
+    &--gallery {
+      height: 300px;
+    }
+
+    &::before {
+      max-width: 1200px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .page-header__slogan {
+    &--index {
+      margin-top: 79px;
+    }
+
+    &--feedback,
+    &--gallery {
+      margin-top: 102px;
+    }
   }
 }

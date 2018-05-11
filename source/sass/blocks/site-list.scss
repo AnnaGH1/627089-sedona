@@ -49,6 +49,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    justify-content: space-between;
     background-color: $bg-white;
   }
 
@@ -66,7 +67,7 @@
 
   .site-list__link {
     color: $font-black;
-    padding: 10px 0;
+    padding: 8px 0;
   }
 
   .site-list__link--active {
@@ -81,7 +82,6 @@
     }
   }
 
-
   .site-list__link[href] {
     &:hover {
       color: $font-blue;
@@ -90,5 +90,11 @@
     &:active {
       color: $font-black-30;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    // flex-basis: 20%;
   }
 }
