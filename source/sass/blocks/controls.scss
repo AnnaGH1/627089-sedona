@@ -18,6 +18,7 @@
   // outline: 2px dotted yellow;
 
   &--progress {
+    position: relative;
     display: flex;
     width: 100%;
     height: $progress-container-h-m;
