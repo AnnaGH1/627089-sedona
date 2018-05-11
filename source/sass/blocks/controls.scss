@@ -1,6 +1,5 @@
 .controls {
   width: 280px;
-  // outline: 1px solid orange;
 }
 
 .controls__list {
@@ -114,6 +113,7 @@
     display: flex;
     align-items: center;
     height: $controls-h-td;
+
 
     &--progress {
       padding: 0;
