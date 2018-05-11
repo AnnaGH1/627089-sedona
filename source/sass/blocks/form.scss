@@ -22,12 +22,14 @@
   font-size: $font-size-1;
   line-height: $line-height-1;
   font-weight: bold;
+  text-align: center;
 
   &::before {
+    display: block;
     content: "";
     position: absolute;
     left: -20px;
-    top: 0;
+    top: -1px;
     width: $mobile-width;
     height: 1px;
     background-color: $bg-grey-3;
@@ -140,6 +142,7 @@
   &--phone,
   &--email {
     &::after {
+      display: block;
       content: "";
       width: 75px;
       height: 60px;
@@ -182,6 +185,7 @@
 }
 
 .form__input-radio + .form__label-choice::before {
+  display: block;
   content: "";
   margin-right: 22px;
   width: 24px;
@@ -212,6 +216,7 @@
 }
 
 .form__input-checkbox + .form__label-choice::before {
+  display: block;
   content: "";
   margin-right: 22px;
   width: 55px;
@@ -332,6 +337,7 @@
     padding-bottom: 14px;
 
     &::after {
+      display: block;
       content: "";
       position: absolute;
       height: 1px;
@@ -351,10 +357,9 @@
 
       &::before {
         top: 15px;
-        left: 0;
-        width: 293px;
-        transform: rotate(90deg);
-        transform-origin: left;
+        left: 1px;
+        width: 1px;
+        height: 293px;
       }
 
       &::after {
@@ -410,7 +415,7 @@
 
       &::before,
       &::after {
-        top: 50%;
+        top: 49%;
       }
 
       &::before {
@@ -486,10 +491,6 @@
     padding-top: 22px;
     color: $font-grey;
   }
-
-  .form__input-radio + .form__label-choice::before {
-    // top: 9px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -525,15 +526,20 @@
       text-align: left;
 
       &::before {
-        width: 293px;
         top: 17px;
         left: -29px;
+        width: 1px;
       }
     }
 
     &--contact {
       margin-bottom: 49px;
       padding-right: 10px;
+
+      &::before,
+      &::after {
+        top: 49%;
+      }
     }
 
     &--rating {
@@ -625,16 +631,6 @@
 
   .form__label-choice {
     text-align: center;
-  }
-
-  .form__input-radio + .form__label-choice::before {
-    // top: 8px;
-    // left: -75px;
-  }
-
-  .form__input-checkbox + .form__label-choice::before {
-    // top: 10px;
-    // left: 3px;
   }
 
   .form__submit {
