@@ -9,9 +9,9 @@
   // background-size: auto;
   // outline: 1px solid blue;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/bg-map-mobile@2x.jpg");
-  }
+  // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //   background-image: url("../../img/bg-map-mobile@2x.jpg");
+  // }
 }
 
 // .map__marker {
@@ -23,6 +23,10 @@
 //   background-image: url("../../img/icon-map-marker.svg");
 //   background-repeat: no-repeat;
 // }
+
+.map-image {
+  border: 0;
+}
 
 @media (min-width: $tablet-width) {
   .map__wrapper {
