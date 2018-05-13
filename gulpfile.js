@@ -33,7 +33,7 @@ gulp.task("images", function () {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest("source/img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("serve", function() {
@@ -46,7 +46,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/*.html").on("change",server.reload);
 });
 
 gulp.task("copy", function () {
@@ -70,6 +70,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "style",
+    "images",
     done
   );
 });
