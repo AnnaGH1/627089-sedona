@@ -1,17 +1,21 @@
 .map__wrapper {
+  position: relative;
   margin: 0 auto;
   width: $mobile-width;
   height: 350px;
 }
 
 .map-fallback {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% auto;
+  // outline: 1px solid red;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -29,6 +33,8 @@
 }
 
 .map-interactive {
+  position: relative;
+  z-index: 1;
   border: 0;
 }
 
