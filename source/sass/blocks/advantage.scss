@@ -96,7 +96,7 @@
     &--promo {
       width: 33.33%;
       // max-width: 256px;
-      height: 256px;
+      min-height: 256px;
       padding-top: 38px;
     }
   }
@@ -154,7 +154,7 @@
 @media (min-width: $desktop-width) {
   .advantage__text {
     max-width: 400px;
-    padding-bottom: 55px;
+    padding-bottom: 45px;
   }
 
   .advantage__title {
