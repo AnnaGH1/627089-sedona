@@ -1,5 +1,6 @@
 .nav-main {
   position: relative;
+  min-height: 93px;
 }
 
 .nav-main__site-list {
@@ -8,7 +9,7 @@
 
 .nav-main__toggle {
   position: absolute;
-  top: 15px;
+  top: 17px;
   right: 20px;
   display: block;
   width: 23px;
@@ -42,14 +43,12 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .nav-main--closed .nav-main__site-list {
+  .nav-main--closed .site-list__item {
     display: none;
-  }
 
-  .nav-main--opened .nav-main__site-list {
-    // position: absolute;
-    top: 0;
-    z-index: 4;
+    &--logo {
+      display: block;
+    }
   }
 
   .nav-main--nojs .nav-main__toggle {

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="js/picturefill.min.js"></script>
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
     <link href="css/style.min.css" type="text/css" rel="stylesheet">
   </head>
   <body>
@@ -18,12 +22,12 @@
               Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--center-left">
+            <li class="site-list__item">
               <a class="site-list__link" href="photo.html">
               Фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item--center-right">
+            <li class="site-list__item">
               <a class="site-list__link" href="form.html">
               Форма отзыва
               </a>
@@ -33,15 +37,17 @@
               HTML Academy
               </a>
             </li>
+            <li class="site-list__item site-list__item--logo">
+              <a class="site-list__link site-list__link--logo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="site-list__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Герб города Седона">
+                </picture>
+              </a>
+            </li>
           </ul>
         </nav>
-        <a class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Герб города Седона">
-          </picture>
-        </a>
         <div class="page-header__slogan-container page-header__slogan-container--index">
           <img class="page-header__slogan page-header__slogan--index" src="img/text-sedona-index.svg" width="280" height="213" alt="Город Седона">
         </div>
@@ -63,8 +69,8 @@
                 </div>
                 <div class="advantage__photo-container">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, main-city-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, main-city-tablet@2x.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
                     <img class="advantage__photo" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото дома в Седоне">
                   </picture>
                 </div>
@@ -93,8 +99,8 @@
                 </div>
                 <div class="advantage__photo-container">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, main-bridge-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, main-bridge-tablet@2x.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
                     <img class="advantage__photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фото моста Дьявола">
                   </picture>
                 </div>
@@ -133,9 +139,11 @@
       </section>
       <section class="map">
         <div class="map__wrapper">
-          <iframe class="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2066333.1112129402!2d-113.33731785312769!3d34.75427990388285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336!5e0!3m2!1sen!2sus!4v1525800251030" width="320" height="350" allowfullscreen></iframe>
-          <div class="map__marker">
-            <span class="visually-hidden">Расположение Седоны на карте</span>
+          <iframe class="map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2066333.1112129402!2d-113.33731785312769!3d34.75427990388285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336!5e0!3m2!1sen!2sus!4v1525800251030" width="320" height="350" allowfullscreen></iframe>
+          <div class="map-fallback">
+            <div class="map__marker">
+              <span class="visually-hidden">Расположение Седоны на карте</span>
+            </div>
           </div>
         </div>
       </section>
