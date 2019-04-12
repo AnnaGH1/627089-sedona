@@ -83,3 +83,24 @@ gulp.task("build", function (done) {
     done
   );
 });
+
+gulp.task("clean:docs", function () {
+  return del("docs");
+});
+
+gulp.task("copybuild", function () {
+  return gulp.src([
+    "build/**/*"
+  ], {
+    base: "build"
+  })
+  .pipe(gulp.dest("docs"));
+});
+
+gulp.task("publish", function (done) {
+  run(
+    "clean:docs",
+    "copybuild",
+    done
+  );
+});
