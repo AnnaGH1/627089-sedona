@@ -1358,7 +1358,7 @@ source {
   color: #000000;
   opacity: 1; }
 
-.form__input:-ms-input-placeholder {
+.form__input::-moz-placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -1406,7 +1406,7 @@ source {
   color: #000000;
   opacity: 1; }
 
-.form__textarea:-ms-input-placeholder {
+.form__textarea::-moz-placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
